@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Tags</title>
+
+    <style>
+      .section-margin {
+        margin-bottom: 150px;
+      }
+
+      .bg-light {
+        background-color: #eee;
+      }
+
+      img {
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- page header -->
+    <header id="header" class="section-margin">
+      <!-- Navigation -->
+      <nav id="navbar">
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li>
+            <a href="#blogs">Blogs</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="banner">
+        <h1>This is banner section.</h1>
+      </div>
+    </header>
+
+    <!--  page main -->
+    <main id="main">
+      <!-- about -->
+      <section id="about" class="section-margin bg-light">
+        <h1>About</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Cupiditate porro inventore saepe dolores doloremque ea consequatur cumque sunt. Dolorum, quo.
+        </p>
+      </section>
+
+      <!-- gallery -->
+      <section id="gallery" class="section-margin">
+        <h1>Gallery</h1>
+
+        <div id="gallery-items">
+          <img src="images/user.png" alt="User 1">
+          <img src="images/user.png" alt="User 2">
+          <img src="images/user.png" alt="User 3">
+        </div>
+      </section>
+
+      <!-- blogs -->
+      <section id="blogs" class="section-margin bg-light">
+        <h1>Blogs</h1>
+        <article class="article">
+          <h3>Article 1</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus natus numquam fugiat
+            ipsum rem veniam dolorem non iusto expedita unde.
+          </p>
+        </article>
+        <article class="article">
+          <h3>Article 2</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus natus numquam fugiat
+            ipsum rem veniam dolorem non iusto expedita unde.
+          </p>
+        </article>
+      </section>
+
+      <!-- contact -->
+      <section id="contact">
+        <h1>Contact</h1>
+        <ul id="contact-items">
+          <li>Address: some address</li>
+          <li>Phone: +977 0123456789</li>
+          <li>Email: me@someaddress.com</li>
+        </ul>
+      </section>
+
+      <footer>
+        <h5>Copyright 2020 | BRG Trainings</h5>
+      </footer>
+    </main>
+  </body>
+</html>

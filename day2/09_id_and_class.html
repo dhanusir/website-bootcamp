@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ID and Class</title>
+
+  <style>
+    img {
+      height: 100px;
+    }
+    /* ID approach */
+    /* #about, #gallery, #blogs {
+      margin-bottom: 200px;
+    } */
+
+    /* class approach */
+    .section-margin {
+      margin-bottom: 150px;
+    }
+
+    .bg-light {
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <!-- page header -->
+  <div id="header" class="section-margin">
+    <!-- Navigation -->
+    <div id="navbar">
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+          <a href="#blogs">Blogs</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="banner">
+      <h1>This is banner section.</h1>
+    </div>
+  </div>
+
+  <!--  page main -->
+  <div id="main">
+    <!-- about -->
+    <div id="about" class="section-margin bg-light">
+      <h1>About</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Cupiditate porro inventore saepe dolores doloremque ea consequatur cumque sunt. Dolorum, quo.
+      </p>
+    </div>
+
+    <!-- gallery -->
+    <div id="gallery" class="section-margin">
+      <h1>Gallery</h1>
+
+      <div id="gallery-items">
+        <img src="images/user.png" alt="User 1">
+        <img src="images/user.png" alt="User 2">
+        <img src="images/user.png" alt="User 3">
+      </div>
+    </div>
+
+    <!-- blogs -->
+    <div id="blogs" class="section-margin bg-light">
+      <h1>Blogs</h1>
+      <div class="article">
+        <h3>Article 1</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus natus numquam fugiat
+          ipsum rem veniam dolorem non iusto expedita unde.
+        </p>
+      </div>
+      <div class="article">
+        <h3>Article 2</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus natus numquam fugiat
+          ipsum rem veniam dolorem non iusto expedita unde.
+        </p>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+      <h1>Contact</h1>
+      <ul id="contact-items">
+        <li>Address: some address</li>
+        <li>Phone: +977 0123456789</li>
+        <li>Email: me@someaddress.com</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

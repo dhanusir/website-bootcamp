@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTML5 Web Page - Home</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+
+      body {
+        font-family: Helvetica, sans-serif;
+        color: #222;
+        line-height: 1.4;
+        margin: 0;
+      }
+
+      #header {
+        margin-bottom: 1rem;
+        background: #444;
+        color: #fff;
+        padding: 10px;
+      }
+
+      #main {
+        float: left;
+        width: 65%;
+        margin-left: 15px;
+      }
+
+      #sidebar {
+        float: right;
+        width: 26%;
+        margin-right: 15px;
+      }
+
+      .clearfix {
+        clear: both;
+      }
+
+      #footer {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+      }
+
+      .text-center {
+        display: block;
+        text-align: center;
+      }
+
+      .card {
+        border: 1px solid #ddd;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+
+      .article {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header" class="card text-center">
+      <h1>Simple HTML5 Web Page</h1>
+      <p>Just Another HTML5 Website</p>
+    </div>
+
+    <!-- main (left) -->
+    <div id="main">
+
+      <!-- welcome Section -->
+      <div id="welcome" class="card">
+        <h2>Welcome To Our Website</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          cupiditate itaque possimus numquam corporis odit deserunt voluptas
+          repellat ad ex earum magnam mollitia magni eaque nisi, excepturi nam
+          temporibus! Sed.
+
+          <br />
+          <a href="#" class="text-center">Click for more</a>
+        </p>
+      </div>
+
+      <!-- Blogs -->
+      <div id="blogs">
+        <h2>Our Blogs</h2>
+
+        <!-- Article One -->
+        <div class="article">
+          <h3>Article One</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+          </p>
+        </div>
+        <!-- Article Two -->
+        <div class="article">
+          <h3>Article Two</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar (right) -->
+    <div id="sidebar" class="card">
+      <h3>Navigation</h3>
+
+      <!-- Navigation -->
+      <ul id="main-nav">
+        <li><a href="11_simple_html5_page_index.html">Home</a></li>
+        <li><a href="11_simple_html5_page_about.html">About</a></li>
+        <li><a href="11_simple_html5_page_contact.html">Contact</a></li>
+      </ul>
+      <hr />
+      <h3>Contact Us</h3>
+      <ul>
+        <li><strong>Address:</strong> Kathmandu, Nepal</li>
+        <li><strong>Phone:</strong> +977 0123456789</li>
+        <li><strong>Email:</strong> me@domain.com</li>
+      </ul>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <p class="text-center">Copyright &copy; Simple HTML5 Page 2020</p>
+    </div>
+  </body>
+</html>
