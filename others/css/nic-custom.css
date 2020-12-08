@@ -1,0 +1,143 @@
+.header-navbar {
+  background-color: #fff;
+  transition: all .2s ease;
+}
+.logo {
+  display: inline-block;
+  margin: 0;
+  height: 50px;
+  transition: transform .4s ease;
+  transform-origin: left center;
+  transform: scale(0.9);
+}
+.logo img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+.nav-link {
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.nav-link:hover {
+  color: rgb(255, 26, 76);
+  transition: all 0.2s ease;
+}
+.nav-item.active .nav-link {
+  color: rgb(255, 26, 76);
+  font-weight: bold;
+}
+.nav-item {
+  position: relative;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.dot, .dot-1 {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  transition: opacity .2s ease;
+}
+.fw-nav-item.active .dot-1, .fw-nav-item:not(.active) .dot, .fw-nav-item:not(.active) .dot-1 {
+  opacity: 0;
+}
+
+.nav-item.active .dot-circle-1_to, .nav-item.active .dot-circle-2_to, .nav-item.active .dot-circle-3_to,
+  .nav-item:not(.active) .nav-link:hover~.dot-1, .nav-item:not(.active) .nav-link:hover~.dot .dot-1 {
+  opacity: 1;
+}
+
+/* animated dots */
+.dot-circle-1 {
+  animation: dot-circle-1_c_o 3s linear 1 normal forwards;
+}
+.dot-circle-2 {
+  animation: dot-circle-2_c_o 3s linear 1 normal forwards;
+}
+.dot-circle-3 {
+  animation: dot-circle-3_c_o 3s linear 1 normal forwards;
+}
+.dot-circle-3_to {
+  animation: dot-circle-3_to__to 3s linear 1 normal forwards;
+}
+.dot-circle-1_to, .dot-circle-2_to, .dot-circle-3_to {
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+.nav-item.active .dot-hover-circle-1_to, .nav-item.active .dot-hover-circle-2_to, .nav-item.active .dot-hover-circle-3_to {
+  animation-play-state: paused;
+}
+.dot-hover-circle-3_to {
+  animation: dot-hover-circle-3_to__to 1.6s linear infinite normal forwards;
+}
+.dot-hover-circle-2_to {
+  animation: dot-hover-circle-2_to__to 1.6s linear infinite normal forwards;
+}
+.dot-hover-circle-1_to {
+  animation: dot-hover-circle-1_to__to 1.6s linear infinite normal forwards;
+}
+
+.btn-sm {
+  padding-top: .5rem !important;
+  padding-bottom: .5rem !important;
+}
+.btn-outline-primary:hover {
+  background: transparent;
+}
+
+/* hero or banner */
+.hero-img {
+  padding-top: 16rem;
+  position: relative;
+  height: calc(100vh - 170px);
+  background-image: url("../img/hero.jpg");
+  background-color: #ccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fullwidth-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+}
+.hero-img::before {
+  content: "";
+  background: linear-gradient(89.45deg,hsla(0,0%,100%,.99) 20.33%,hsla(0,0%,100%,0) 92.97%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.text-black {
+  color: #111;
+}
+.text-red {
+  color: red;
+}
+.hero-content {
+  z-index: 5;
+  position: relative;
+}
+.heading-1 {
+  font-size: 2.5rem;
+  line-height: 1.25;
+  font-weight: bold;
+}
+.subheading-1 {
+  font-size: 1.0625rem;
+  line-height: 2.94;
+  font-weight: 700;
+  color: gray;
+}

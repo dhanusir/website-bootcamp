@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Basic Selectors</title>
+
+  <style>
+    /* element selectors */
+    body {
+      background-color: #eee;
+    }
+
+    /* class selector using dot (.) */
+    .heading {
+      color: blue;
+    }
+
+    /* ID selector using (#) */
+    #box1 {
+      background-color: yellow;
+    }
+
+    /* multiple selectors */
+    #box1, #box2 {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
+    /* nested selectors */
+    #box1 p {
+      font-size: 20px;
+    }
+
+    #box2 {
+      color: #00F;
+      font-size: 13px;
+    }
+
+    /* direct child selector */
+    div > a {
+      color: red;
+    }
+    #box1 > a, #box2 a {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="box1">
+    <h2 class="heading">Welcome to Box 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod qui iusto perferendis nisi officia quidem ad enim maiores animi maxime.</p>
+    <a href="#">Click here to read more.</a>
+  </div>
+  <div id="box2">
+    <h2 class="heading">Welcome to Box 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laudantium voluptatum dolorum iure, eos et distinctio porro provident ut assumenda.</p>
+    <a href="#">Click here to read more.</a>
+  </div>
+
+  <div class="action-links">
+    <p class="links-wrapper">
+      <a href="#">Home</a> | <a href="#">Gallery</a>
+    </p>
+  </div>
+</body>
+</html>

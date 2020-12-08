@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Input elements</title>
+
+    <style>
+      .container {
+        width: 800px;
+      }
+
+      hr {
+        width: 200px;
+        margin: 20px 0;
+      }
+      input {
+        width: 300px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Basic Input elements</h1>
+
+      <h3>Input box</h3>
+      <input type="text" size="60" maxlength="40"> <br>
+
+      <h3>Checkbox and Radio button</h3>
+      <input type="radio" name="color1" id="green1" value="#F00"> <br>
+      <input type="radio" name="color2" id="red1" value="#F00" checked="checked">  <br>
+      <input type="radio" name="color3" id="blue1" value="#F00" checked="CHeCked"> <br>
+
+      <!-- value attribute is used when form submitted to the server -->
+
+      <h4>Radio button when name is same but both are checked</h4>
+
+      <!-- Only one checked at a time -->
+      <input type="radio" name="color" id="red2" value="#F00" checked="checked">  <br>
+      <input type="radio" name="color" id="blue2" value="#F00" checked="CHeCked"> <br>
+
+      <h4>Checked and Unchecked checkboxes</h4>
+      <!-- Unchecked -->
+      <input type="checkbox" name="color">
+      <input type="checkbox" name="color" checked="checked">
+
+      <h3>Label and input</h3>
+      <p>
+        <input type="checkbox" name="color" value="#F00" id="red3">
+        <label for="red3">Red</label>
+      </p>
+
+      <h3>Specifying Range</h3>
+      Marks: <input type="number" size="10" name="marks" min="0" max="100" value="60">
+      Subject Feedback: <input type="range" size="2" name="feedback" min="1" max="5" value="4" >
+
+      <h3>Submit button</h3>
+      <input type="submit">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float and and Flexbox Intro</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Helvetica, sans-serif;
+        color: #333;
+      }
+
+      .container {
+        max-width: 850px;
+        margin: auto;
+      }
+      .clearfix {
+        clear: both;
+      }
+
+      h1 {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+
+      .box {
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      #box2 {
+        width: 60%;
+        float: left;
+      }
+      #box3 {
+        width: 40%;
+        float: right;
+      }
+
+      /* Flex */
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .item {
+        background: #fefefe;
+        border: 1px solid #ccc;
+        margin: 10px 0;
+        margin-right: 10px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Float Intro</h1>
+
+      <div class="float-container">
+        <div id="box1" class="box">
+          <h2>Box 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia id quam
+            amet veniam autem consequatur nulla nam possimus ipsam inventore.
+          </p>
+        </div>
+        <div id="box2" class="box">
+          <h2>Box 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia id quam
+            amet veniam autem consequatur nulla nam possimus ipsam inventore.
+          </p>
+        </div>
+        <div id="box3" class="box">
+          <h2>Box 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia id quam
+            amet veniam autem consequatur nulla nam possimus ipsam inventore.
+          </p>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div id="box4" class="box">
+          <h2>Box 4</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia id quam
+            amet veniam autem consequatur nulla nam possimus ipsam inventore.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Flex Intro</h1>
+
+      <div class="flex-container">
+        <div class="item">
+          <h3>Item 1</h3>
+        </div>
+        <div class="item">
+          <h3>Item 2</h3>
+        </div>
+        <div class="item">
+          <h3>Item 3</h3>
+        </div>
+        <div class="item">
+          <h3>Item 4</h3>
+        </div>
+        <div class="item">
+          <h3>Item 5</h3>
+        </div>
+        <div class="item">
+          <h3>Item 6</h3>
+        </div>
+        <div class="item">
+          <h3>Item 7</h3>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
+
+<!--
+  Reference Links:
+    - https://css-tricks.com/all-about-floats/
+    - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+  - display: flex; will creates "flex container"
+  - all direct child elements are "flex items"
+  - alignment properties:
+    - justify-content: align along the main axis (horizontal)
+    - align-items: align along the cross axis(vertical)
+    - align-content: align when extra space in cross axis
+
+ -->
