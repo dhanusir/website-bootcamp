@@ -14,10 +14,16 @@
         width: 200px;
         margin: 20px 0;
       }
-      input {
+      input[type="text"] {
         width: 300px;
       }
 
+      textarea {
+        resize: none;
+        width: 300px;
+        height: 150px;
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -25,7 +31,7 @@
       <h1>Basic Input elements</h1>
 
       <h3>Input box</h3>
-      <input type="text" size="60" maxlength="40"> <br>
+      <input type="text" size="600" maxlength="30"> <br>
 
       <h3>Checkbox and Radio button</h3>
       <input type="radio" name="color1" id="green1" value="#F00"> <br>
@@ -47,13 +53,16 @@
 
       <h3>Label and input</h3>
       <p>
-        <input type="checkbox" name="color" value="#F00" id="red3">
         <label for="red3">Red</label>
+        <input type="checkbox" name="color" value="#F00" id="red3">
       </p>
 
       <h3>Specifying Range</h3>
       Marks: <input type="number" size="10" name="marks" min="0" max="100" value="60">
       Subject Feedback: <input type="range" size="2" name="feedback" min="1" max="5" value="4" >
+
+      <h3>Textarea</h3>
+      <textarea placeholder="enter your query ..."></textarea>
 
       <h3>Submit button</h3>
       <input type="submit">
