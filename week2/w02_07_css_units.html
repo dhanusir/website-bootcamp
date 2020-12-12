@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Units</title>
+
+  <style>
+    /* default font-size : 16px */
+    /* changing root size: 10px */
+    html {
+      font-size: 10px;
+    }
+    .pixel {
+      height: 100px;
+      background-color: #eee;
+      width: 100px;
+    }
+    .em {
+      font-size: 10px;
+      background-color: #ddd;
+      width: 5em; /* 1em = 10px, 5em = 50px*/
+    }
+    .rem {
+      background-color: #ccc;
+      width: 5rem; /* root font-size 16px, 5*16 = 80px */
+                  /* root font-size 10px, 5*10 = 50px */
+    }
+    .vw {
+      width: 50vw;
+      background-color: red;
+    }
+    .vh {
+      height: 50vh;
+      background-color: green;
+    }
+
+    .percent {
+      font-size: 4em; /* 10 * 4 = 40px*/
+    }
+    .percent p {
+      font-size: 50%;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Units</h1>
+
+  <h2>Absolute Length - px (pixel)</h2>
+  <div class="pixel">
+  </div>
+
+  <h2>Relative length - em</h2>
+  <div class="em">
+    <h4>Unit 1</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Vel doloremque harum totam cumque dicta nisi
+      dolore! Nostrum ut deleniti illo!
+    </p>
+  </div>
+
+  <h2>Relative length - rem</h2>
+  <div class="rem">
+    <p>
+      Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Consequatur doloremque tempore doloribus enim sint eaque,
+      quisquam mollitia atque dolorum. Optio!
+    </p>
+  </div>
+
+  <h2>viewport width (vw)</h2>
+  <div class="vw">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit assumenda amet omnis consequuntur repellendus non
+      incidunt et ipsum, optio eligendi!
+    </p>
+  </div>
+
+  <h2>viewport height (vh)</h2>
+  <div class="vh">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit assumenda amet omnis consequuntur repellendus non
+      incidunt et ipsum, optio eligendi!
+    </p>
+  </div>
+
+  <h2>% length (related to % length of parent font-size)</h2>
+  <div class="percent">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit assumenda amet omnis consequuntur repellendus non
+      incidunt et ipsum, optio eligendi!
+    </p>
+  </div>
+</body>
+</html>
