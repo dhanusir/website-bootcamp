@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline Block</title>
+
+  <style>
+    ul {
+      margin: 0;
+      padding: 5px;
+      list-style: none;
+      background-color: #eee;
+    }
+    ul li {
+      display: inline;
+      padding: 0 20px;
+      border-right: 1px solid #333;
+    }
+
+    img {
+      display: block;
+      margin: auto;
+    }
+
+    span {
+      border: 1px solid red;
+    }
+    .inl {
+      display: inline;
+      width: 200px;
+      height: 200px;
+    }
+    .highlight-blk {
+      display: block;
+    }
+    .highlight-inl-blk {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+    }
+
+    .box {
+      background-color: #eee;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 30%;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <h1>Inline Block</h1>
+  <h3>From block to inline</h3>
+
+  <ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact</a></li>
+  </ul>
+
+  <h3>From inline to block</h3>
+  <img src="images/user.png" alt="User">
+
+  <h3>Inline Block</h3>
+  <div>
+    Lorem ipsum dolor sit,
+    <span class="inl">amet consectetur adipisicing elit. </span>
+    Corrupti officiis
+    eligendi
+    <span class="highlight-blk">temporibus facere cum, accusantium</span> possimus expedita nobis harum architecto.
+
+    <p>
+      Lorem ipsum dolor sit,
+      <span class="highlight-inl-blk">amet consectetur adipisicing elit.</span>
+      Ab, necessitatibus laudantium illo rem soluta eaque dolores libero nam adipisci eius?
+    </p>
+  </div>
+
+  <h3>Inline block part 2</h3>
+  <div class="box">
+    <h3>Box 1</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Magni, omnis?
+    </p>
+  </div>
+  <div class="box">
+    <h3>Box 2</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Magni, omnis?
+    </p>
+  </div>
+  <div class="box">
+    <h3>Box 3</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Magni, omnis?
+    </p>
+  </div>
+
+
+</body>
+</html>
