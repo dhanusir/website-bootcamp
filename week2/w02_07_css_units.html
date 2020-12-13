@@ -9,7 +9,7 @@
     /* default font-size : 16px */
     /* changing root size: 10px */
     html {
-      font-size: 10px;
+      font-size: 20px;
     }
     .pixel {
       height: 100px;
@@ -19,12 +19,17 @@
     .em {
       font-size: 10px;
       background-color: #ddd;
-      width: 5em; /* 1em = 10px, 5em = 50px*/
+      width: 5em;
+      /* 1em = 16px, 5*16 = 80px */
+      /* 1em = 10px, 5*10 = 50px */
     }
+
     .rem {
+      font-size: 10px;
       background-color: #ccc;
-      width: 5rem; /* root font-size 16px, 5*16 = 80px */
-                  /* root font-size 10px, 5*10 = 50px */
+      width: 5rem;
+      /* 1rem = 16px, 5*16 = 80px */
+      /* 1rem = 20px, 5*20 = 100px */
     }
     .vw {
       width: 50vw;
@@ -41,6 +46,17 @@
     .percent p {
       font-size: 50%;
     }
+
+    .grand-parent {
+      font-size: 20px;
+    }
+    .parent {
+      font-size: 2em;
+    }
+    .grand-child {
+      width: 1em;
+      background-color: #ccc;
+    }
   </style>
 </head>
 <body>
@@ -52,7 +68,6 @@
 
   <h2>Relative length - em</h2>
   <div class="em">
-    <h4>Unit 1</h4>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing
       elit. Vel doloremque harum totam cumque dicta nisi
@@ -65,7 +80,6 @@
     <p>
       Lorem ipsum dolor, sit amet consectetur
       adipisicing elit. Consequatur doloremque tempore doloribus enim sint eaque,
-      quisquam mollitia atque dolorum. Optio!
     </p>
   </div>
 
@@ -91,6 +105,16 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit assumenda amet omnis consequuntur repellendus non
       incidunt et ipsum, optio eligendi!
     </p>
+  </div>
+
+  <div class="grand-parent">
+    Grand Parent
+    <div class="parent">
+      Parent
+      <div class="grand-child">
+        Grand Child
+      </div>
+    </div>
   </div>
 </body>
 </html>

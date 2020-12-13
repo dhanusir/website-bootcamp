@@ -18,7 +18,10 @@
       border-right: 1px solid #333;
     }
 
-    img {
+    .image-groups {
+      text-align: center;
+    }
+    .single-img {
       display: block;
       margin: auto;
     }
@@ -31,9 +34,11 @@
       width: 200px;
       height: 200px;
     }
+
     .highlight-blk {
       display: block;
     }
+
     .highlight-inl-blk {
       display: inline-block;
       width: 100px;
@@ -43,8 +48,9 @@
     .box {
       background-color: #eee;
       padding: 10px;
+      border: 2px solid #ccc;
       margin-bottom: 10px;
-      width: 30%;
+      width: 32%;
       display: inline-block;
       box-sizing: border-box;
     }
@@ -61,7 +67,13 @@
   </ul>
 
   <h3>From inline to block</h3>
-  <img src="images/user.png" alt="User">
+  <img src="images/user.png" alt="User" class="single-img">
+
+  <h3>Grouping two images</h3>
+  <div class="image-groups">
+    <img src="images/user.png" alt="User">
+    <img src="images/user.png" alt="User">
+  </div>
 
   <h3>Inline Block</h3>
   <div>
@@ -100,7 +112,5 @@
       adipisicing elit. Magni, omnis?
     </p>
   </div>
-
-
 </body>
 </html>

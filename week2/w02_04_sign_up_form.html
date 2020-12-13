@@ -46,7 +46,6 @@
         border-radius: 5px;
       }
       .form-wrapper .btn {
-        display: block;
         padding: 5px 30px;
         border-radius: 5px;
         margin: auto;
@@ -55,14 +54,18 @@
         background-color: #2473fc;
         border: 1px solid #2473fc;
         margin-top: 10px;
+        font-size: 14px;
       }
       .form-wrapper .btn.bg-light {
         background-color: #eee;
         color: #333;
         border: 1px solid #ccc;
-        font-size: 13px;
+        font-size: 14px;
       }
 
+      .action-btns {
+        text-align: center;
+      }
       .form-wrapper button:hover {
         background-color: #245bfc;
       }
@@ -111,8 +114,10 @@
             <input type="password" name="password-confirm" id="password-confirm">
           </div>
 
-          <button type="submit" class="btn bg-light">Reset</button>
-          <input class="btn" type="submit" value="Submit">
+          <div class="action-btns">
+            <button class="btn bg-light">Reset</button>
+            <button class="btn" type="submit">Submit</button>
+          </div>
 
           <p class="form-bottom-info">
             By submitting form you are confirming our
