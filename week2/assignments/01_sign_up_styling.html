@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Sign Up form</title>
+
+    <style>
+      * {
+        /*
+          - May be you want to add "border-box" for "box-sizing" property so that
+            padding does not affect width of HTML elements
+          - Also, better to Reset margin and padding
+       */
+      }
+      body {
+        /* Probably want to set some font-family as default Times New Roman looks oldish */
+        /* Set background color to #ff7070 */
+      }
+      .container {
+        /*
+          - Set a "max-width" for responsiveness of the element (like 400px)
+          - Want to position element to center? Then, need to add margin: auto on left and right
+            will center a block element.
+          - Also you can give margin top and bottom along with margin: auto
+        */
+      }
+      a {
+        /*
+          Remove the underlined links as they look ugly
+        */
+      }
+
+      /* This is the white area around the form and heading, etc */
+      .form-wrapper {
+        /*
+          - set the background color to white
+          - padding proper padding
+          - may be set text color to light black like #444
+          - adding some border-radius will give nicer look
+        */
+      }
+
+      .form-wrapper h1, .form-wrapper p {
+        /*
+          You want to center these elements
+        */
+      }
+      .form-wrapper .form-group {
+        /*
+          Add top and bottom margin to give proper spaces between two form group
+        */
+      }
+      .form-wrapper .form-group label {
+        /*
+          - label should be turned into a block element
+          - also want to give some bottom margin to differentiate with input box
+        */
+      }
+      .form-wrapper .form-group input {
+        /*
+          - inputs should reach to full width of the .form-wrapper 100%
+          - give some padding
+          - set a solid border
+          - give some border-radius to look nicer
+        */
+      }
+      .form-wrapper .btn {
+        /*
+          - give some padding to button to make it nicer,
+            like 5px top-bottom, 30px left-right
+          - adding border-radius will make it look better
+          - set default background color to #2473fc
+          - also set border with solid color #2473fc of 1px
+          - give default text color to white (#fff) as background is dark
+          - set text font size to 14px
+        */
+      }
+      .form-wrapper .btn:hover {
+        /* make the background color bit darker like  #245bfc */
+      }
+      /* setting CSS for another button */
+      .form-wrapper .btn.bg-light {
+        /*
+          - set a light background color (#eee)
+          - give the dark text color say #333
+          - you should set the border color to #eee as well
+        */
+      }
+      .form-wrapper .bg-light:hover {
+        /* make the background color bit darker like #ddd */
+      }
+
+      .action-btns {
+        /*
+          - make the center alignment to all the buttons
+          - add bottom margin to differentiate between the bottom text
+        */
+      }
+      .form-footer {
+        /*
+          - center align the text
+          - give top and bottom margin
+          - make white as text color
+        */
+      }
+      .form-footer a {
+        /* make anchor color as yellow */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- form container -->
+    <div class="container">
+      <div class="form-wrapper">
+        <h1>Sign Up</h1>
+        <p>
+          Only few minutes left to connect with us!
+        </p>
+
+        <form>
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" name="firstName" id="fname">
+          </div>
+
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lastName" id="lname">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+          </div>
+
+          <div class="form-group">
+            <label for="password-confirm">Confirm Password</label>
+            <input type="password" name="password-confirm" id="password-confirm">
+          </div>
+
+          <div class="action-btns">
+            <button class="btn bg-light">Reset</button>
+            <button class="btn" type="submit">Submit</button>
+          </div>
+
+          <p class="form-bottom-info">
+            By submitting form you are confirming our
+            <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+
+      <p class="form-footer">Already have an account? <a href="#">Login here</a></p>
+    </div>
+  </body>
+</html>
