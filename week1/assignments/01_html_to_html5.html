@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guided assignment - HTML to HTML5</title>
+    <style>
+      * {
+        /*
+          - May be you want to add "border-box" for "box-sizing" property so that
+            padding does not affect width of HTML elements
+          - Also, better to Reset margin and padding
+       */
+      }
+
+      body {
+        /*
+          - Probably want to set some font-family as default Times New Roman looks oldish
+          - may be want to set default text color to #333
+          - set the gap between two lines by setting line-height to 1.7
+        */
+      }
+
+      a {
+        /* remove underline in links as it makes link ugly */
+      }
+
+      ul {
+        /*
+          Having dots before list items look ugly, remove by doing none to list-style
+        */
+      }
+
+      h2 {
+        /*
+          Since you have set default margin to all elements to 0 at top, you need to
+          explicitly set margin of all headers. Set here to top bottom 10px
+        */
+      }
+
+      #header {
+        /*
+          Make the header different than other section
+          - make the background color bit dark (#333)
+          - make font color white (since we have dark background)
+          - give some padding for spacing around text
+        */
+      }
+
+      /* we need to divide page into two sections now: main and sidebar */
+      #main {
+        /*
+          - make the width to 65%
+          - float to left so that sidebar can come to right
+          - give some margin from left side like 15px;
+        */
+      }
+      #sidebar {
+        /*
+          - make the width to 26%
+          - float to right
+          - give some margin from rigt side like 15px;
+        */
+      }
+
+      .article {
+        /* add bottom margin to differentiate between two articles */
+      }
+
+      hr {
+        /*
+          add margin top and bottom to differentiate between
+          side nav bar and contact info
+        */
+      }
+
+      .clearfix {
+        /*
+          need to clear the floats from previous
+          divs to properly show the following elements
+         */
+      }
+
+      #footer {
+        /*
+          - make the background dark like #333
+          - give color to white
+          - setting some padding like 10px
+        */
+      }
+
+      .text-center {
+        /*
+          a utility class to make alignment center
+        */
+      }
+
+      .section-padding {
+        /*
+          utility class to give padding to section.
+          set to 60px top-bottom and 30px left-right
+        */
+      }
+      .section-bg-light {
+        /*
+          to different between alternate section give
+          the background to some light color like #eee
+        */
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <!-- change div to header -->
+    <div id="header" class="card text-center">
+      <h1>Simple HTML5 Web Page</h1>
+      <p>Just Another HTML5 Website</p>
+    </div>
+
+    <!-- main (left) -->
+    <!-- change div to main -->
+    <div id="main">
+
+      <!-- About -->
+      <!-- change div to section -->
+      <div id="about" class="section-padding">
+        <h2>About Us</h2>
+
+        <div class="intro-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+          </p>
+        </div>
+      </div>
+
+      <!-- Blogs -->
+      <!-- change div to section -->
+      <div id="blogs" class="section-padding section-bg-light">
+        <h2>Our Blogs</h2>
+
+        <!-- Article One -->
+        <!-- change div to article -->
+        <div class="article">
+          <h3>Article One</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+          </p>
+        </div>
+
+        <!-- Article Two -->
+        <!-- change div to article -->
+        <div class="article">
+          <h3>Article Two</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <!-- change div to section -->
+      <div id="contact" class="section-padding card">
+        <h2>Contact Us</h2>
+
+        <div id="form">
+          <form action="#">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" value="" placeholder="Enter first name ...">
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" value="" placeholder="Enter last name ..."><br><br>
+
+            <label for="query">Your query:</label><br>
+            <textarea id="query" rows="4" cols="50" placeholder="Enter your query ..."></textarea>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar (right) -->
+    <!-- change div to aside -->
+    <div id="sidebar" class="card">
+      <h3>Navigation</h3>
+
+      <!-- Navigation -->
+      <!-- change div to nav -->
+      <div id="side-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <h3>Contact Us</h3>
+      <ul>
+        <li><strong>Address:</strong> Kathmandu, Nepal</li>
+        <li><strong>Phone:</strong> +977 0123456789</li>
+        <li><strong>Email:</strong> me@domain.com</li>
+      </ul>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- Footer -->
+    <!-- change div to footer -->
+    <div id="footer">
+      <p class="text-center">Copyright &copy; Simple HTML5 Page 2020</p>
+    </div>
+  </body>
+</html>
