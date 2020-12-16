@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guided Assignment - Contact form #1</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* utility CSS */
+      .container {
+        max-width: 900px;
+        margin: 30px auto;
+        background-color: #efefef;
+        overflow: auto;
+        padding: 3rem 5rem;
+      }
+      .btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        border: 1px solid transparent;
+        padding: 5px 14px;
+        font-size: 1rem;
+        border-radius: 5px;
+      }
+      .btn-red {
+        color: #fff;
+        background-color: #dc3545;
+        border-color: #dc3545;
+      }
+      .btn-red:hover {
+        background-color: #bb2d3b;
+        border-color: #b02a37;
+      }
+      .shadow {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      }
+      .shadow-sm {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+      }
+
+      /* other CSS */
+      .container .heading {
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+      .container .heading h1 {
+        color: #333;
+      }
+      .container .heading p {
+        color: #666;
+      }
+      .map {
+        width: 40%;
+        float: left;
+      }
+      .contact-form {
+        width: 55%;
+        float: right;
+      }
+      .map iframe {
+        height: 450px;
+        width: 100%;
+      }
+      .contact-form .form-group {
+        margin: 20px 0;
+      }
+      /* reset margin of first form group */
+      .contact-form .form-group:nth-child(1) {
+        margin: 0;
+      }
+      .contact-form .form-group label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .contact-form .form-group input, .contact-form .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+      }
+      .contact-form .form-group textarea {
+        height: 100px;
+        resize: none;
+        font-family: inherit;
+        font-size: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="heading">
+          <h1>Contact Us</h1>
+          <p>Ready to help you anytime.</p>
+        </div>
+
+        <div class="map shadow-sm">
+          <!-- Paste the iframe. See how to get map iframe at bottom of this page -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.079264828965!2d85.2881911144346!3d27.714838831770912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb188d9b82c8ad%3A0xae31bde410797bf7!2sSwayambhunath%20Stupa!5e0!3m2!1sen!2sin!4v1608116542719!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="contact-form">
+          <form action="#">
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name ...">
+            </div>
+
+            <div class="form-group">
+              <label for="lname">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email ...">
+            </div>
+
+            <div class="form-group">
+              <label for="mobile">Mobile</label>
+              <input type="text" id="mobile" name="mobile" placeholder="Your contact number ...">
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Message</label>
+              <textarea id="message" name="message" placeholder="Type your message here ..."></textarea>
+            </div>
+
+            <input type="submit" value="Submit" class="btn btn-red">
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
