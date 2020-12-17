@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guided Assignment - Bootstrap like Buttons</title>
+
+    <!--
+      Assignment: Building bootstrap like buttons
+      See https://getbootstrap.com/docs/4.5/components/buttons/
+    -->
+    <style>
+      main {
+        /*
+          - set some nice font family like "Arial, Helvetica, sans-serif"
+          - give margin-left to 2rem for good viewing of buttons
+        */
+      }
+      button {
+        /*
+          - set display to block so that we can see all buttons in new line
+          - give margin bottom 1rem to differentiate between two buttons
+          - make font-size to 16px
+        */
+      }
+
+      /* we can make anchor tag as button too */
+      a {
+        /*
+          - set display to block
+          - remove the underline in the anchor tag
+          - set width to 90px
+          - set margin bottom to 1rem
+          - give font-size to 16px
+        */
+      }
+      .btn {
+        /*
+          - set background to #efefef
+          - make border 1px solid #efefef
+          - set color to #333
+          - give padding top/bottom 0.275rem and left/right 0.75rem
+          - make cursor as pointer to give nice hand effect on hovering
+          - make rounding of box by giving border-box 5px
+          - set the text alignment to center (for anchor)
+          - set font-weight to 400 (see what happen if you give 600)
+          - give line-height to 1.5
+        */
+      }
+
+      /* hover state */
+      .btn:hover {
+        /* set background color to #ddd which can be seen on hovering */
+      }
+
+      /* focus state */
+      /* See by pressing tab on the browser blue ring will appear around button box */
+      .btn:focus {
+        /*
+          - remove the blue ring by making outline property to 0
+          - give some box-shadow to '0 0 0 0.1rem rgba(13, 110, 253, 0.25)'
+        */
+      }
+
+
+      /* setting primary button and its state */
+      .btn-primary {
+        /*
+          - make background and border color to #0d6efd (don't set 1px solid to border, use border-color property)
+          - give color to #fff
+        */
+      }
+      /* if you hover now, you will see gray background*/
+      .btn-primary:hover {
+        /*
+          - set background color to #0b5ed7
+          - set border color to #0a58ca
+        */
+      }
+      /* this is the state when you click on button, right now nothing happens */
+      .btn-primary:active {
+        /*
+          - give background color to #0a58ca
+          - set border color to #0a53be
+          (you should see some blink effect)
+          NOTE: See what happens when you give background-color to #fff
+        */
+      }
+
+      .btn-secondary {
+        /*
+          - make background and border color to #6c757d
+          - give color to #fff
+        */
+      }
+      .btn-secondary:hover {
+        /*
+          - set background color to #5c636a
+          - set border color to #565e64
+        */
+      }
+
+      .btn-success {
+        /*
+          - make background and border color to #198754
+          - give color to #fff
+        */
+      }
+      .btn-success:hover {
+        /*
+          - set background color to #157347
+          - set border color to #146c43
+        */
+      }
+      .btn-danger {
+        /*
+          - make background and border color to #dc3545
+          - give color to #fff
+        */
+      }
+      .btn-danger:hover {
+        /*
+          - set background color to #bb2d3b
+          - set border color to  #b02a37
+        */
+      }
+      .btn-light {
+        /*
+          - make background and border color to #f8f9fa
+          - give color to #000
+        */
+      }
+      .btn-light:hover {
+        /*
+          - set background color to #f9fafb
+          - set border color to #f9fafb
+        */
+      }
+      .btn-dark {
+        /*
+          - make background and border color to #21252
+          - give color to #fff
+        */
+      }
+      .btn-dark:hover {
+        /*
+          - set background color to #1c1f23
+          - set border color to #1a1e21
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+
+      <h1>Bootstrap like buttons</h1>
+
+      <button class="btn btn-primary">Button Tag</button>
+      <a href="#" class="btn btn-primary">Anchor Tag</a>
+
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-light">Light</button>
+      <button class="btn btn-dark">Dark</button>
+
+    </main>
+  </body>
+</html>
