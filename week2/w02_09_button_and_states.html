@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button and its States</title>
+
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      padding: 1rem 2rem;
+    }
+    .mt-0 {
+      margin-top: 0;
+    }
+    .mb-0 {
+      margin-bottom: 0;
+    }
+    .btn {
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: #efefef;
+      border: 1px solid #efefef;
+      padding: 0.275rem 0.75rem;
+      color: #333;
+      border-radius: 5px;
+    }
+    .btn.disabled, .btn:disabled {
+      opacity: 0.65;
+      pointer-events: none;
+    }
+
+    .focus .btn:focus {
+      outline: 0;
+      box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
+    }
+
+    .hover .btn:hover {
+      background-color: #ddd;
+    }
+
+    .active .btn:active {
+      color: red;
+    }
+
+    .cursor .btn {
+      cursor: help;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+    .btn-primary:hover {
+      color: #fff;
+      background-color: #0b5ed7;
+      border-color: #0a58ca;
+    }
+    .btn-secondary {
+      color: #fff;
+      background-color: #6c757d;
+      border-color: #6c757d;
+    }
+    .btn-secondary:hover {
+      color: #fff;
+      background-color: #5c636a;
+      border-color: #565e64;
+    }
+    .btn-success {
+      color: #fff;
+      background-color: #198754;
+      border-color: #198754;
+    }
+    .btn-success:hover {
+      color: #fff;
+      background-color: #157347;
+      border-color: #146c43;
+    }
+    .btn-info {
+      color: #000;
+      background-color: #0dcaf0;
+      border-color: #0dcaf0;
+    }
+    .btn-info:hover {
+      color: #000;
+      background-color: #31d2f2;
+      border-color: #25cff2;
+    }
+    .btn-warning {
+      color: #000;
+      background-color: #ffc107;
+      border-color: #ffc107;
+    }
+    .btn-warning:hover {
+      color: #000;
+      background-color: #ffca2c;
+      border-color: #ffc720;
+    }
+    .btn-danger {
+      color: #fff;
+      background-color: #dc3545;
+      border-color: #dc3545;
+    }
+    .btn-danger:hover {
+      color: #fff;
+      background-color: #bb2d3b;
+      border-color: #b02a37;
+    }
+    .btn-light {
+      color: #000;
+      background-color: #f8f9fa;
+      border-color: #f8f9fa;
+    }
+    .btn-light:hover {
+      color: #000;
+      background-color: #f9fafb;
+      border-color: #f9fafb;
+    }
+    .btn-dark {
+      color: #fff;
+      background-color: #212529;
+      border-color: #212529;
+    }
+    .btn-dark:hover {
+      color: #fff;
+      background-color: #1c1f23;
+      border-color: #1a1e21;
+    }
+
+    /* Button tag CSS */
+    button, input {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Button and its States</h1>
+
+  <h2>Styling using anchor (a) tag</h2>
+  <div class="default">
+    <h3>1. Default button</h3>
+    <a href="#" class="btn">Button</a>
+  </div>
+
+  <div class="focus">
+    <h3>2. Focus button</h3>
+    <a href="#" class="btn">Button</a>
+
+    <div class="hover">
+      <h3>3. Hover button</h3>
+      <a href="#" class="btn">Button</a>
+    </div>
+
+    <div class="disabled">
+      <h3>4. Disabled button</h3>
+      <a href="#" class="btn disabled">Button</a>
+    </div>
+
+    <div class="active">
+      <h3>5. Active button</h3>
+      <a href="#" class="btn">Button</a>
+    </div>
+
+    <div class="cursor">
+      <h3>Extra: Button with different cursor</h3>
+      <a href="#" class="btn">Button</a>
+      <a href="https://www.w3schools.com/cssref/pr_class_cursor.asp" target="_blank">(Click to see all type of cursor)</a>
+    </div>
+
+    <h2 class="mb-0">Bootstrap 4 like buttons</h2>
+    <p class="mt-0">
+      <a href="https://getbootstrap.com/docs/4.5/components/buttons/" target="_blank">(Click to see)</a>
+    </p>
+
+    <div class="bootstrap-btns">
+      <a class="btn btn-primary">Primary</a>
+      <a class="btn btn-secondary">Secondary</a>
+      <a class="btn btn-success">Success</a>
+      <a class="btn btn-danger">Danger</a>
+      <a class="btn btn-warning">Warning</a>
+      <a class="btn btn-info">Info</a>
+      <a class="btn btn-light">Light</a>
+      <a class="btn btn-dark">Dark</a>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+
+  <h2>Styling using button tag</h2>
+  <div class="default">
+    <h3>1. Default button</h3>
+    <button href="#" class="btn">Button</button>
+  </div>
+
+  <div class="focus">
+    <h3>2. Focus button</h3>
+    <button href="#" class="btn">Button</button>
+
+    <div class="hover">
+      <h3>3. Hover button</h3>
+      <button href="#" class="btn">Button</button>
+    </div>
+
+    <div class="disabled">
+      <h3>4. Disabled button</h3>
+      <button href="#" class="btn" disabled>Button</button>
+    </div>
+
+    <div class="active">
+      <h3>5. Active button</h3>
+      <button href="#" class="btn">Button</button>
+    </div>
+
+    <div class="cursor">
+      <h3>Extra: Button with different cursor</h3>
+      <button href="#" class="btn">Button</button>
+      <a href="https://www.w3schools.com/cssref/pr_class_cursor.asp" target="_blank">(Click to see all type of cursor)</a>
+    </div>
+
+    <h2 class="mb-0">Bootstrap 4 like buttons</h2>
+    <p class="mt-0">
+      <a href="https://getbootstrap.com/docs/4.5/components/buttons/" target="_blank">(Click to see)</a>
+    </p>
+
+    <div class="bootstrap-btns">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-light">Light</button>
+      <button class="btn btn-dark">Dark</button>
+    </div>
+  </div>
+
+  <h2>Styling using input tag</h2>
+  <div class="default">
+    <h3>You can use input tag as well</h3>
+    <input class="btn btn-primary" type="button" value="Primary">
+    <input class="btn btn-secondary" type="submit" value="Submit">
+    <input class="btn btn-danger" type="reset" value="Reset">
+  </div>
+</body>
+</html>
