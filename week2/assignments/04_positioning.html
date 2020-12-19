@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guided Assignment - Elements positioning</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      nav {
+        background: #333;
+        width: 100%;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+      }
+      nav ul li a {
+        padding: 1rem;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+      }
+      nav ul li a:hover {
+        display: block;
+        background-color: #555;
+      }
+
+      nav.nav-sticky {
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+      }
+
+      header {
+        background: green;
+        color: #fff;
+        display: flex;
+        min-height: 250px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 3.5em;
+      }
+
+      .blogs {
+        line-height: 1.5em;
+        margin: 50px auto;
+        max-width: 30rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 100px;
+      }
+
+      article {
+        margin-bottom: 2rem;
+        background-color: #eee;
+        padding: 2rem;
+      }
+
+      #article2 {
+        position: relative;
+        left: 150px;
+      }
+
+      .article-parent {
+        position: relative;
+        height: 350px;
+      }
+      .article-child {
+        border: 1px dotted blue;
+        padding: 1rem;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+      .notification .message {
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0.85;
+        padding: 20px;
+        position: fixed;
+        color: blue;
+        text-align: center;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        /* z-index: 2; */
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Blogs</h1>
+    </header>
+    <nav class="nav-sticky">
+      <ul>
+        <li><a href="#hoses">Hoses</a></li>
+        <li><a href="#rakes">Rakes</a></li>
+        <li><a href="#shovels">Shovels</a></li>
+      </ul>
+    </nav>
+
+    <section class="notification">
+      <div class="message">
+        COVID-19! We are on high alert!
+      </div>
+    </section>
+
+    <section class="blogs">
+      <article>
+        <h1>Article 1</h1>
+        <div class="article-parent">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Vel adipisci expedita repellat possimus accusamus ad maxime ea ullam ipsa aliquid.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem saepe illo possimus,
+          amet distinctio quam fugit perferendis perspiciatis aut ratione!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum nam
+          soluta quos ipsa dolor harum est aliquid molestias autem omnis!
+
+          <div class="article-child">
+            This is child article text of Article 1
+          </div>
+        </div>
+      </article>
+      <article id="article2">
+        <h1>Article 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+          sapiente magni fuga culpa consequuntur corporis nulla explicabo
+          ipsam facilis velit.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem saepe illo possimus,
+          amet distinctio quam fugit perferendis perspiciatis aut ratione!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum nam
+          soluta quos ipsa dolor harum est aliquid molestias autem omnis!
+        </p>
+      </article>
+
+      <article>
+        <h1>Article 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum ipsum
+          alias hic facere consectetur explicabo vitae blanditiis laboriosam cupiditate!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem saepe illo possimus,
+          amet distinctio quam fugit perferendis perspiciatis aut ratione!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum nam
+          soluta quos ipsa dolor harum est aliquid molestias autem omnis!
+        </p>
+      </article>
+    </section>
+
+  </body>
+</html>

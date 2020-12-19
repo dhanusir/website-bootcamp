@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Element Positioning</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      height: 2000px;
+    }
+    .item {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #333;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    #item1 {
+      background: red;
+      color: #fff;
+      position: static; /* no effect of top/bottom/left/right property*/
+      position: relative;
+      top: 20px;
+      left: 100px;
+    }
+
+    .parent {
+      height: 400px;
+      width: 400px;
+      background-color: #eee;
+      /* position: static; */
+      position: relative;
+    }
+
+    /* position absolute only works for parent with position relative */
+    .parent #item2 {
+      background: blue;
+      color: #fff;
+      /* absolute is related to parent element */
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      /* z-index: -1; */
+    }
+    .parent #item3 {
+      background: green;
+      color: #fff;
+      position: absolute;
+      bottom: 50px;
+      right: 50px;
+    }
+
+    #item4 {
+      background: yellow;
+      position: fixed;
+    }
+    /* stick element to the parent */
+    #item5 {
+      background: black;
+      color: #fff;
+      position: sticky;
+      top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Element Positioning</h1>
+
+  <div id="item1" class="item">Item 1</div>
+  <div class="parent">
+    <div id="item2" class="item">Item 2</div>
+    <div id="item3" class="item">Item 3</div>
+  </div>
+  <div id="item4" class="item">Item 4</div>
+  <div id="item5" class="item">Item 5</div>
+</body>
+</html>
