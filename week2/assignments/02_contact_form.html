@@ -12,9 +12,13 @@
             padding does not affect width of HTML elements
           - Also, better to Reset margin and padding
        */
+       box-sizing: border-box;
+       padding: 0;
+       margin: 0;
       }
       body {
         /* Probably want to set some font-family as default Times New Roman looks oldish */
+        font-family: Arial, Helvetica, sans-serif;
       }
 
       .container {
@@ -24,6 +28,10 @@
             will center a block element.
           - Also you can give margin top and bottom along with margin: auto like 30px top-bottom
         */
+       max-width: 900px; 
+       margin: 30px auto;
+        
+
       }
 
       .container .heading {
@@ -31,49 +39,68 @@
           - differentiate the heading with other part of contact by giving margin bottom 2rem (32px)
           - make the text to center
         */
+        margin-bottom: 2rem;
+        text-align: center;
       }
 
       .container .heading h1 {
         /* set the text color to #333 */
+        color: #333;
       }
       .container .heading p {
         /* make the tag line bit lighter than heading, set color to #666 */
+        color: #666;
       }
       .map {
         /*
           - set the width of map to 40% of container width
           - float the map to left
         */
+        float: left;
+        width: 40%;         
+        /* 0.4 x 900 = 360px but when i put 360px then map and form element donot float side by side. why sir???*/
+    
+
       }
       .contact-form {
         /*
           - set the width of contact form to 55%
           - float the form to right
         */
+        width: 55%;   /* 0.55 x 900 = 495 */
+        float: right;
+        
       }
       .map iframe {
         /*
           - set map iframe to some height 450px
           - make width to take 100% of the map width
         */
+        height: 450px;
+        width: 100%;
       }
       .contact-form .form-group {
         /*
           differentiate form element pair with margin top/bottom 20px
         */
+        margin: 20px 0;
       }
+
       /*
         reset margin-top of first form group
         as above CSS is creating unnecessary margin
       */
       .contact-form .form-group:nth-child(1) {
         /* set margin-top to 0 */
+        margin-top: 0;
       }
       .contact-form .form-group label {
         /*
           - make label display block so that input will go to new line
           - set margin to 10px for spacing between label and text
         */
+        display: block;
+        margin-bottom: 10px;
       }
       .contact-form .form-group input, .contact-form .form-group textarea {
         /*
@@ -82,9 +109,13 @@
           - set border 1px solid with color #bbb
           - give some border-radius to make it look good
         */
+        width: 100%;  /* is this equal to 495px width of contact-form??? */
+        padding: 10px;
+        border: 1px solid #bbb;
+        border-radius: 7px;
       }
       .contact-form .form-group textarea {
-        /*
+  /* 
           if you click and drag on the bottom-left of textarea
           it will resize which is a bad user-experience
           - make resize property to none
@@ -93,7 +124,10 @@
             in body will not affect it.
             Set font-family and size to inherit which will take body font family and size
             Read its answer here - https://stackoverflow.com/a/2875030/1120530
-        */
+        */ 
+        height: 100px;
+        resize: none;
+        font-family: Arial, Helvetica, sans-serif; 
       }
 
       /* notice submit button is looking quite odd  */
@@ -107,13 +141,24 @@
           - give font-size as 1rem (remember rem is the size relative to root font-size)
           - add a border-radius of 5px to nice rounding around the button box
         */
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        border: 1px solid transparent;
+        padding: 5px 15px;
+        font-size: 1rem;
+        border-radius: 5px;
       }
+
       /* add extra CSS for extra beautification of button */
       .btn-red {
         /*
           - set the background-color and border-color to #dc3545
           - give white to text color
          */
+         background-color: #dc3545;
+         border-color: #dc3545;
+         color: #fff;
       }
       /*
         now if you hover over button, it should give experience of
@@ -124,6 +169,8 @@
           set the background-color and border-color to #bb2d3b
           and see by hovering over it
         */
+        background-color: #bb2d3b;
+        border-color: #bb2d3b;
       }
 
       /* to highlight map give some shadow to the box */
@@ -131,6 +178,7 @@
         /*
           set box-shadow property to 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075)
         */
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075);
       }
 
       /* now let's set the background of whole container */
@@ -145,6 +193,10 @@
           - set overflow property to auto to give background color to whole container
           - set padding to 2rem top/bottom and 3rem left/right to give proper spacing around
         */
+      background-color: #efefef;
+      overflow: auto;
+      padding: 2rem 3rem;
+
       }
 
     </style>
@@ -164,7 +216,7 @@
         <div class="contact-form">
           <form action="#">
             <div class="form-group">
-              <label for="fname">Name</label>
+              <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your full name ...">
             </div>
 
@@ -179,7 +231,7 @@
             </div>
 
             <div class="form-group">
-              <label for="subject">Message</label>
+              <label for="message">Message</label>
               <textarea id="message" name="message" placeholder="Type your message here ..."></textarea>
             </div>
 
