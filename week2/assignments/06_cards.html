@@ -14,78 +14,96 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       color: #333;
+      padding: 2rem;
     }
     h1 {
-      margin-top: 1rem;
-      text-align: center;
+      /*
+        - set some margin for h1 to have nice gap at top of page
+        - make the text align center
+      */
     }
     .adventure-album {
-      margin-top: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
+      /*
+        - give margin-top to 2rem
+        - set display to flex
+        - make justify content center
+        - make align items to center
+        - give some gap between flex items as 2rem or as per your need
+      */
     }
     .card {
-      position: relative;
-      word-wrap: break-word;
-      background-color: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.125);
-      border-radius: 0.25rem;
-      width: 200px;
+      /*
+        - make position as relative
+        - set word-wrap to break-word
+        - give background-color to #fff
+        - set border to 1px solid rgba(0, 0, 0, 0.125)
+        - set border-radius to 0.25rem
+        - set width to 200px
+      */
     }
     .card .card-img-top {
-      width: 100%;
-      border-top-left-radius: 0.125rem;
-      border-top-right-radius: 0.125rem;
-      height: 10rem;
+      /*
+        - set image width to take whole width i.e 100% of parent i.e card (200px above)
+        - set border radius to 0.125rem top left and top right, others as 0
+        - make height as 10rem
+      */
     }
     .card-body {
-      flex: 1 1 auto;
-      padding: 1rem 1rem;
+      /*
+        - set padding to 1rem on all sides
+      */
     }
 
     .card-title {
-      font-size: 16px;
-      margin-bottom: 0.5rem;
+      /*
+        - give a good size to card title like 16px
+        - set margin bottom to 0.5rem
+      */
     }
 
-    .card-subtitle {
-      margin-top: -0.25rem;
-      margin-bottom: 0;
-    }
-
+    /* define a single margin bottom css */
     .mb-2 {
-      margin-bottom: 0.5rem;
+      /* set margin bottom to 0.5rem */
+    }
+    /* define a single margin top css */
+    .mt-4 {
+      /* set margin top to 1.5rem */
     }
 
     .card-text {
-      margin-bottom: 1rem;
-      font-size: 14px;
-      color: #555;
+      /*
+        - give margin-bottom of 1rem to have some space from button
+        - set font-size to 14px
+        - make color to #555
+      */
     }
 
     .btn {
-      background-color: #efefef;
-      border: 1px solid #efefef;
-      padding: 0.275rem 0.75rem;
-      cursor: pointer;
-      color: #333;
-      border-radius: 5px;
-      text-align: center;
-      font-weight: 400;
-      line-height: 1.5;
-      text-decoration: none;
+      /*
+        - set background to #efefef
+        - make border 1px solid #efefef
+        - set color to #333
+        - give padding top/bottom 0.275rem and left/right 0.75rem
+        - make cursor as pointer to give nice hand effect on hovering
+        - make rounding of box by giving border-box 5px
+        - set the text alignment to center (for anchor)
+        - set font-weight to 400 (see what happen if you give 600)
+        - give line-height to 1.5
+      */
     }
     .btn-primary {
-      background-color: #0d6efd;
-      border-color: #0d6efd;
-      color: #fff;
+      /*
+        - make background and border color to #0d6efd (don't set 1px solid to border, use border-color property)
+        - give color to #fff
+      */
     }
+    /* make button small in size */
     .btn-sm {
-      padding: 0.25rem 0.5rem;
-      font-size: 0.75rem;
-      border-radius: 0.25rem;
+      /*
+        - give padding to 0.25rem top/bottom and 0.5rem left/right
+        - set font-size to 0.75rem
+        - give border radius as 0.25rem
+      */
     }
 
   </style>
@@ -93,13 +111,13 @@
 <body>
   <h1>Guided Assignment - Card</h1>
 
-  <div class="adventure-album">
+  <div class="adventure-album mt-4">
     <div class="card">
       <img src="/week2/images/everest.jpg" alt="Everest" class="card-img-top">
       <div class="card-body">
         <h5 class="card-title">Everest Basecamp</h5>
         <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, velit!
+          Lorem fsfdsfdfdf dolor sit amet consectetur adipisicing elit. Totam, velit!
         </p>
         <a href="#" class="btn btn-sm btn-primary">Read More</a>
       </div>
