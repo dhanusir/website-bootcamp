@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guided Assignment - Cards</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      padding: 2rem;
+    }
+    h1 {
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .adventure-album {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+    .card {
+      position: relative;
+      word-wrap: break-word;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 0.25rem;
+      width: 200px;
+    }
+    .card .card-img-top {
+      width: 100%;
+      border-top-left-radius: 0.125rem;
+      border-top-right-radius: 0.125rem;
+      height: 10rem;
+    }
+    .card-body {
+      flex: 1 1 auto;
+      padding: 1rem 1rem;
+    }
+
+    .card-title {
+      font-size: 16px;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-subtitle {
+      margin-top: -0.25rem;
+      margin-bottom: 0;
+    }
+
+    .mb-2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      margin-bottom: 1rem;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .btn {
+      background-color: #efefef;
+      border: 1px solid #efefef;
+      padding: 0.275rem 0.75rem;
+      cursor: pointer;
+      color: #333;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: 400;
+      line-height: 1.5;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+      color: #fff;
+    }
+    .btn-sm {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 0.25rem;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Guided Assignment - Card</h1>
+
+  <div class="adventure-album">
+    <div class="card">
+      <img src="/week2/images/everest.jpg" alt="Everest" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Everest Basecamp</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, velit!
+        </p>
+        <a href="#" class="btn btn-sm btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/week2/images/kathmandu.jpg" alt="Kathmandu" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Kathmandu Valley</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, nulla?
+        </p>
+        <a href="#" class="btn btn-sm btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/week2/images/ghandruk.jpg" alt="Ghandruk" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Ghandruk Valley</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ipsam.
+        </p>
+        <a href="#" class="btn btn-sm btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
