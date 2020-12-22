@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guided Assignment - Navbar and Banner</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: Helvetica, sans-serif;
+      }
+
+      h1 {
+        /* give margin top/bottom 16px */
+        margin: 16px;
+      }
+      .navbar {
+        /*
+          - make the position relative
+          - set the display to flex
+          - make flex-wrap to wrap the items to next row
+          - set align-items to center
+          - give justify-content as space-around to have spaces around flex items
+          - set background-color to #eee
+        */
+        background: #eee;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .navbar a {
+        /*
+          - set color to some dark like #333
+          - remove the underline
+        */
+        color: #333;
+        text-decoration: none;
+      }
+      .navbar-nav {
+        /*
+          - make display to flex
+          - set direction as row
+          - remove the list style by setting it to none
+        */
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+      }
+      .navbar-nav li a {
+        /*
+          - make anchor tag as block
+          - set some padding around as 1rem
+        */
+        display: block;
+        padding: 1rem;
+      }
+      .navbar-nav li a:hover {
+        /*
+          give hover effect to nav item
+          - set background-color to #444
+          - give color to #fff
+        */
+        background-color: #444;
+        color: #fff;
+      }
+
+      .banner {
+        /*
+          - set the height to 400px
+          - set some dark background as #222
+          - make color to light as #fff
+          - make display to flex
+          - set flex-direction to column
+          - give a center alignment to flex items and justify-content
+        */
+        height: 400px;
+        background-color: #222;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+
+        /* Check with giving background image and background-size */
+        /*
+          - set background to url("../images/kathmandu.jpg") with no-repeat and center
+          - set background-size to cover
+        */
+        /* background: url("../images/kathmandu.jpg") no-repeat center;
+        background-size: cover; */
+      }
+      .banner .heading {
+        /* set some bigger height than normal h1, like 3rem */
+        font-size: 3rem;
+      }
+      .banner .tagline {
+        /*
+          give a light textual effect to tagline
+        */
+        font-weight: 300;
+        color: yellow;
+      }
+      .banner .actions {
+        /* set margin top to 1rem */
+        margin-top: 1rem;
+      }
+      .btn {
+        /*
+          - set background to #efefef
+          - make border 1px solid #efefef
+          - set color to #333
+          - give padding top/bottom 0.275rem and left/right 0.75rem
+          - make cursor as pointer to give nice hand effect on hovering
+          - make rounding of box by giving border-box 5px
+          - set the text alignment to center (for anchor)
+          - set font-weight to 400 (see what happen if you give 600)
+          - give line-height to 1.5
+          - remove underline of anchor tag
+        */
+        background-color: #efefef;
+        border: 1px solid #efefef;
+        color: #333;
+        padding: 0.275rem 0.75rem;
+        cursor: pointer;
+        border-radius: 0.275rem;
+        text-align: center;
+        font-weight: 400;
+        text-decoration: none;
+        line-height: 1.5;
+      }
+      .btn-primary {
+        /*
+          - make background and border color to #0d6efd (don't set 1px solid to border, use border-color property)
+          - give color to #fff
+        */
+        background: #0d6efd;
+        border: 1px solid #0d6efd;
+        color: #fff;
+      }
+      .btn-primary:hover {
+        /*
+          make background and border color to #0b5ed7
+        */
+        background-color: #0b5ed7;
+        border-color: #0b5ed7;
+      }
+      .btn-secondary {
+        /*
+          make background and border color to #6c757d
+        */
+        background-color: #6c757d;
+        border: 1px solid #6c757d;
+        color: #fff;
+      }
+      .btn-secondary:hover {
+        /*
+          - make background and border color to #5c636a
+          - give color to #fff
+        */
+        background-color: #5c636a;
+        border-color: #5c636a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Navbar and Banner</h1>
+    <hr>
+    <br><br>
+
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">Navbar</a>
+
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="banner">
+        <h1 class="heading">Welcome to Banner</h1>
+        <p class="tagline">
+          Helping you with your programming practices.
+        </p>
+        <div class="actions">
+          <a href="#" class="btn btn-primary">Know me more</a>
+          <a href="#" class="btn btn-secondary">Contact me</a>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
