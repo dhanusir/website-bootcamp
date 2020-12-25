@@ -1,0 +1,95 @@
+/*
+  Utility CSS: These CSS will be used multiple times across
+  multiple pages
+
+  NOTE: Color palette - https://coolors.co/040f0f-248232-2ba84a-2d3a3a-fcfffc
+*/
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  width: 100%;
+}
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+.text-primary {
+  color: #2ba84a;
+}
+.text-secondary {
+  color: #01baef;
+}
+.mr-2 {
+  margin-right: 0.5rem;
+}
+.btn {
+  background-color: #efefef;
+  border: 1px solid #efefef;
+  color: #333;
+  padding: 0.275rem 0.75rem;
+  cursor: pointer;
+  border-radius: 0.275rem;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.btn-primary {
+  background: #0d6efd;
+  border: 1px solid #0d6efd;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0b5ed7;
+}
+.btn-secondary {
+  background-color: #6c757d;
+  border: 1px solid #6c757d;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #5c636a;
+  border-color: #5c636a;
+}
+.btn-sm {
+  padding: 0.175rem 0.5rem;
+  font-size: 13px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+.section-padding {
+  padding: 6rem 0;
+}
+
+.section-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center
+}
+
+/* columns */
+.col-4 {
+  width: 40%;
+}
+.col-8 {
+  width: 80%;
+}
+.p-5 {
+  padding: 3rem;
+}
+.mb-4 {
+  margin-bottom: 2rem;
+}

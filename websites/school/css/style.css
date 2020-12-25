@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.7;
+  height: 2000px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  opacity: 0.9;
+  position: fixed;
+  background: #333;
+  z-index: 10;
+  width: 100%;
+  transition: 0.2s ease-in;
+}
+.navbar-brand {
+  color: #fff;
+}
+.navbar.top {
+  opacity: 0.7;
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.navbar-nav .nav-item .nav-link {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+}
+.navbar-nav .nav-item.active .nav-link, .navbar-nav .nav-item .nav-link:hover {
+  color: #fff;
+}
+
+.banner {
+  height: 550px;
+  background-color: #aaa;
+  background: url("../img/banner.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.banner > * {
+  z-index: 1;
+}
+.banner::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0.7;
+  top: 15%;
+  height: 50%;
+  width: 100%;
+}
+.banner h1 {
+  font-size: 3rem;
+}
+.banner p {
+  font-size: 18px;
+  font-weight: 300;
+}
+.banner .actions {
+  margin-top: 1rem;
+}
+
+/* about section */
+.about-section .profile-photo {
+  max-width: 100%;
+}
+.about-section .about-info .highlight {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+/* why section */
+.why-section {
+  background-color: #efefef;
+}
+.why-section .section-wrapper {
+  gap: 3rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  word-wrap: break-word;
+  border-radius: 0.25rem;
+  width: 300px;
+}
+.card-header {
+
+}
+.card-body {
+  padding: 1rem 1rem;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.card-body .card-text {
+  font-size: 14px;
+  color: #555;
+}

@@ -1,0 +1,21 @@
+
+23/12/2020 - Day 5
+
+- Talk about visibility and hidden
+- Talk about responsiveness
+- negative margins
+- order of CSS properties
+
+- JavaScript Basics
+- Using let and const (2015)
+- Events
+- DOM Basics
+
+
+HADDA Practice
+-----------------
+H - Hard Work
+A - Attitude
+D - Discipline
+D - Determination
+A - Approach
