@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 03 - Modal Dialog Box</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: gray;
+        font-size: 20px;
+        color: white;
+        padding: 10px 30px;
+        cursor: pointer;
+      }
+
+      #popUpBox {
+        width: 500px;
+        overflow: hidden;
+        background: #eee;
+        box-shadow: 0 0 0 black;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        padding: 10px;
+        text-align: center;
+        display: none;
+      }
+
+      #closeModal .close {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 2rem;
+        background: transparent;
+        border: none;
+        color: #333;
+      }
+      #closeModal .close:hover {
+        color: red;
+      }
+      #closeModal .close:active {
+        outline: 0;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div id="popUpBox">
+      <div id="box">
+        <h1>Modal Header</h1>
+        <p>
+          Model body content. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, commodi.
+        </p>
+        <div id="closeModal"></div>
+      </div>
+    </div>
+
+    <button onclick="render('You look very pretty today.')" class="btn">Show Modal</button>
+
+
+
+    <script>
+      var render = function () {
+        // show Modal
+        let popUpBox = document.getElementById("popUpBox");
+        popUpBox.style.display = "block";
+
+        // close Modal
+        document.getElementById("closeModal").innerHTML = '<button onclick="hide();" class="close">&#x02A2F;</button>';
+      };
+
+      var hide = function () {
+        document.getElementById("popUpBox").style.display = "none";
+      };
+    </script>
+  </body>
+</html>
