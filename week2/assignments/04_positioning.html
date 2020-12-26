@@ -16,90 +16,129 @@
       }
 
       nav {
-        background: #333;
-        width: 100%;
+        /*
+          - set background to color #333;
+          - make width 100%
+        */
+
       }
       nav ul {
-        display: flex;
-        list-style: none;
-        justify-content: center;
+        /*
+          - set display to flex
+          - remove dots from list items
+          - make justify-content as center
+        */
+
       }
       nav ul li a {
-        padding: 1rem;
-        display: block;
-        color: #fff;
-        text-decoration: none;
+        /*
+          - give color to #fff
+          - set padding to 1rem
+          - make display to block
+          - remove underline from anchor tags
+        */
+
       }
       nav ul li a:hover {
-        display: block;
-        background-color: #555;
+        /* set background color to #555 */
+
       }
 
       nav.nav-sticky {
-        position: sticky;
-        top: 0px;
-        z-index: 10;
+        /*
+          - set position as sticky
+          - make top 0 so that navbar stick to 0px of viewport
+        */
+
       }
 
       header {
-        background: green;
-        color: #fff;
-        display: flex;
-        min-height: 250px;
-        justify-content: center;
-        align-items: center;
+        /*
+          - set a dark background as green
+          - make color to #fff (white)
+          - set display to flex
+          - make justify-content and align-items to center
+          - set height to 250px
+        */
+
       }
 
       header h1 {
-        font-size: 3.5em;
+        /* set font-size to 3.5rem */
+
       }
 
       .blogs {
-        line-height: 1.5em;
-        margin: 50px auto;
-        max-width: 30rem;
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-bottom: 100px;
+        /*
+          - make line-height to 1.5
+          - set max-width to 500px
+          - give margin 50px top/bottom auto to left/right
+          - give 5% as padding left/right
+          - set margin-bottom to 100px
+        */
+
       }
 
       article {
-        margin-bottom: 2rem;
-        background-color: #eee;
-        padding: 2rem;
+        /*
+          - set border to different between all articles
+          - give margin of 2rem to all article box
+          - make background color to #eee
+          - set padding 2rem
+        */
+
       }
 
       #article2 {
-        position: relative;
-        left: 150px;
+        /*
+          - set position to relative
+          - set left to 100px;
+        */
+
       }
 
-      .article-parent {
-        position: relative;
-        height: 350px;
+      #article1 .article-parent {
+        /*
+          - since it is parent, make it position relative
+          - set height to 300px
+        */
+
       }
-      .article-child {
-        border: 1px dotted blue;
-        padding: 1rem;
-        position: absolute;
-        right: 0;
-        bottom: 0;
+      .font-upcase {
+        /* make text-transform property to uppercase */
+
+      }
+      /* set for 1st article */
+      #article1 .article-parent .article-child {
+        /*
+          - make border 1px dotted blue
+          - set padding 1rem around
+          - make position absolute that we can move relative to its parent
+          - make right and bottom to 0
+        */
+
       }
 
       .notification .message {
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0.85;
-        padding: 20px;
-        position: fixed;
-        color: blue;
-        text-align: center;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        /* z-index: 2; */
+        /*
+          - mke the background to with with transparency 0.5 as rgba(0,0,0,0.8)
+          - set padding to 20px all around
+          - set position fixed
+          - keep left and bottom to 0 (it will make it fixed to bottom)
+          - make right as 0
+          - give color to #fff
+          - make text-align center
+          - make sure width is 100%
+        */
+
       }
 
+      /*  Try following */
+      /*
+        - add z-index to 10 for nav.nav-sticky class
+         (it will get navbar forward ahead of all elements)
+        - give z-index to 2 for .notification .message class
+      */
     </style>
   </head>
   <body>
@@ -122,7 +161,7 @@
     </section>
 
     <section class="blogs">
-      <article>
+      <article id="article1">
         <h1>Article 1</h1>
         <div class="article-parent">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -132,8 +171,8 @@
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum nam
           soluta quos ipsa dolor harum est aliquid molestias autem omnis!
 
-          <div class="article-child">
-            This is child article text of Article 1
+          <div class="article-child font-upcase">
+            Child article text of Article 1
           </div>
         </div>
       </article>
