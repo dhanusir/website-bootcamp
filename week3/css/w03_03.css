@@ -22,6 +22,16 @@ main {
   align-items: center;
 }
 
+.between {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: #fff;
+}
+
 .left {
   width: 52rem;
   display: flex;
@@ -36,7 +46,7 @@ main {
 
 /* elements style */
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   position: absolute;
   width: 100%;
@@ -48,7 +58,7 @@ h1 {
 .number {
   background: #eee;
   color: #333;
-  font-size: 6rem;
+  font-size: 4rem;
   width: 15rem;
   padding: 3rem 0rem;
   text-align: center;
@@ -57,19 +67,11 @@ h1 {
   left: 50%;
   transform: translate(-50%, 50%);
 }
-
-.between {
-  font-size: 1.4rem;
-  position: absolute;
-  top: 56%;
-  left: 40%;
-}
-
 .guess {
   background: none;
   border: 4px solid #eee;
-  font-size: 4rem;
-  padding: 2.5rem;
+  font-size: 3rem;
+  padding: 2rem;
   width: 25rem;
   text-align: center;
   display: block;
