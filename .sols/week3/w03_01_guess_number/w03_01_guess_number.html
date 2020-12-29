@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="w03_01.css" />
+
+    <title>Week 03 - Reset and High Score for Number Guess Game</title>
+    <!--
+      Assignment Tasks:
+      1. Add a reset button to reset the Game
+        - reset message as 'Start guessing...'
+        - score to 10
+        - number content to '?'
+        - guess value to empty
+        - body tag background color to #fff
+      2. Show error message as 'Guess should be between 1 to 20'
+         when player enters number above 20
+      3. Implement high score functionality on trying multiple times
+
+     -->
+  </head>
+  <body>
+    <button onclick="reset();" class="btn reset">Reset Game</button>
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" placeholder="Guess ..." />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">10</span></p>
+
+        <!-- create a p tag similar to score with following changes:
+          - Use different icon like 🏆
+          - Use Highscore instead of Score
+          - Inside span use 'highscore' as class name and set 0 instead of 10
+        -->
+        <p class="label-score">🏆 Highscore: <span class="highscore">0</span></p>
+      </section>
+    </main>
+
+    <script src="w03_01.js"></script>
+  </body>
+</html>
+
+<!-- Windows + . for emojis -->

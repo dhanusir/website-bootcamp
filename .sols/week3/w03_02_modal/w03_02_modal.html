@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="w03_02.css" />
+    <title>Week 03 - Modal Window</title>
+  </head>
+  <body>
+    <button class="show">Show Modal</button>
+
+    <div class="modal hidden">
+      <div class="modal-header">
+        <h2 class="modal-title">Modal Window 🥳</h2>
+        <button class="close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
+          necessitatibus distinctio animi explicabo nulla corporis dicta
+          dolore libero et, ut inventore eligendi ipsam id! Cumque in sed
+          laboriosam doloremque odit?
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeModal();">Close</button>
+        <button class="btn btn-primary">Save</button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="w03_02.js"></script>
+  </body>
+</html>
