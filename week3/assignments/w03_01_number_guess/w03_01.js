@@ -22,8 +22,8 @@ document.querySelector('.check').addEventListener('click', function () {
 
     // when guess greater than maxNumLimit
   } else if (guess > maxNumLimit) {
-    showMessage('🚫 Guess should be in between 1 to 20.');
-    document.querySelector('.guess').value = "";
+    // show message with '🚫 Guess should be in between 1 to 20.'
+    // update the value of element with class .guess to empty string
   } else if (guess === secretNumber) {
     showMessage('🏆 Correct Number!');
     document.querySelector('.number').textContent = secretNumber;
