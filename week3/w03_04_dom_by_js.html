@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 03 - DOM, manipulation and traversal (JS)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Helvetica, sans-serif;
+    }
+
+    .container {
+      height: 100vh;
+      max-width: 900px;
+      margin: auto;
+      margin-top:30px;
+    }
+
+    .actions {
+      float: left;
+      width: 30%;
+      background-color: #ddd;
+      height: 90vh;
+      padding: 2rem;
+    }
+    .actions .btn {
+      background-color: #efefef;
+      border: 1px solid #efefef;
+      padding: 0.275rem 0.75rem;
+      cursor: pointer;
+      color: #333;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: 400;
+      line-height: 1.5;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+    .actions input {
+      border: 1px solid #ddd;
+      padding: 0.5rem;
+    }
+
+    .grandparent {
+      float:right;
+      width: 70%;
+      background-color: #888;
+      height: 90vh;
+    }
+    .parent {
+      position: relative;
+      left: 50px;
+      top: 50px;
+      background-color: #555;
+      height: 70vh;
+    }
+    .child {
+      position: static;
+      height: 80px;
+      width: 90%;
+      background-color: #fff;
+      border: 1px solid #555;
+      z-index: 10;
+      text-align: center;
+      font-size: 1.5rem;
+      color: #444;
+      padding: 1em;
+    }
+    .child.upcase {
+      text-transform: uppercase;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>DOM, manipulation and traversal of elements [JavaScript]</h1>
+
+    <div class="actions">
+      <button class="btn" onclick="upcaseChildOne();">Upcase child 1</button>
+      <button class="btn" onclick="downcaseChildOne();">Downcase Child 1</button>
+      <br>
+      <input id="child1Style" type="text" placeholder="style ...(name:value)"></input>
+      <button class="btn" onclick="updateChild1Style();">Update Child 1 Style</button>
+      <br><br>
+      <button class="btn" onclick="delChildThree();">Delete Child 3</button>
+
+      <br><br>
+      <label for="addChildInput">Add new Child</label>
+      <input id="addChildInput" type="text" placeholder="Child name ..."></input>
+      <button id="addChild" class="btn">Add</button>
+
+      <br><br>
+      <label for="replaceChildInput">Replace Child</label>
+      <input id="oldChildInput" type="text" placeholder="Old Child name ..."></input>
+      <br>
+      <input id="newChildInput" type="text" placeholder="New Child name ..."></input>
+      <button id="replaceChild" class="btn">Replace</button>
+
+      <br><br>
+      <label>Update color of all children</label>
+      <input id="colorHex" type="text" placeholder="Enter color ...(#colorid)"></input>
+      <button id="updateColor" class="btn">Update Color</button>
+    </div>
+
+    <div class="grandparent">
+      <div class="parent">
+        <div id="child1" class="child">child item 1</div>
+        <div id="child2" class="child">child item 2</div>
+        <div id="child3" class="child">child item 3</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/w03_04.js"></script>
+</body>
+</html>
