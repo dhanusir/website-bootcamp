@@ -22,8 +22,12 @@
     h1 {
       /*
       - set some margin for h1 to have nice gap at top of page
+  
       - make the text align center
       */
+
+        margin: 20px;
+        text-align: center;
     }
     .adventure-album {
       /*
@@ -33,6 +37,13 @@
       - make align items to center
       - give gap property as 2rem to set gap between flex items
       */
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* outline: 1px solid gold; */
+      gap: 2rem;
+
     }
     .card {
       /*
@@ -44,6 +55,13 @@
       - set border to 1px solid rgba(0, 0, 0, 0.125)
       - set border-radius to 0.25rem
       */
+      position: relative;
+      width: 200px;
+      height: 350px;
+      word-wrap: break-word;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 0.25rem;
     }
     .card .card-img-top {
       /*
@@ -51,9 +69,13 @@
       - set border radius to 0.125rem top left and top right, others as 0
       - make height as 10rem
       */
+      width: 100%;
+      border-radius: 0.125rem 0.125rem 0 0;
+      height: 10rem;
     }
     .card-body {
       /* set padding to 1rem on all sides */
+      padding: 1rem;
     }
 
     .card-title {
@@ -61,16 +83,21 @@
       - give a good font-size to card title like 16px
       - set margin bottom to 0.5rem
       */
+
+      font-size: 16px;
+      margin-bottom: 0.5rem;
     }
 
     /* define a single margin bottom css */
     .mb-2 {
       /* set margin bottom to 0.5rem */
+      margin-bottom: 0.5rem;
     }
 
     /* define a single margin top css */
     .mt-4 {
       /* set margin top to 1.5rem */
+      margin-top: 1.5rem;
     }
 
     .card-text {
@@ -79,6 +106,9 @@
       - set font-size to 14px
       - make color to #555
       */
+      margin-bottom: 1rem;
+      font-size: 14px;
+      color: #555;
     }
 
     .btn {
@@ -94,15 +124,34 @@
       - set font-weight to 400 (see what happen if you give 600)
       - give line-height to 1.5
       */
+
+      background:#efefef;
+      border: 1px solid #efefef;
+      color: #333;
+      text-decoration: none;
+      padding: 0.275rem 0.75rem;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: 400;
+      line-height: 1.5;
     }
     .btn-primary {
       /*
       - make background and border color to #0d6efd (don't set 1px solid to border, use border-color property)
       - give color to #fff
       */
+      background: #0d6efd;
+      border: 1px solid #0d6efd;
+      color: #fff;
+
+
     }
 
     /* Add the hover effect CSS to btn-primary */
+    .btn-primary:hover {
+      background: blue;
+    }
 
     /* make button small in size */
     .btn-sm {
