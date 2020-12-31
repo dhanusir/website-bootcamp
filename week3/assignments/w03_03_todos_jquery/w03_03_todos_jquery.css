@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: #333;
+}
+h2 {
+  margin: 20px 0;
+}
+.text-center {
+  text-align: center;
+}
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+}
+.app-wrapper header {
+  background-color: #666;
+  padding: 2rem;
+  overflow: auto;
+  color: #fff;
+}
+.app-wrapper input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 1.2rem;
+}
+.app-wrapper input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px rgb(174, 221, 252);
+}
+.app-wrapper .add {
+  padding: 10px;
+  width: 25%;
+  background-color: rgb(16, 179, 16);
+  color: #fff;
+  float: left;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.app-wrapper .add:hover {
+  background-color:  rgb(14, 150, 14);
+}
+
+#todoList {
+  list-style: none;
+}
+
+#todoList .todo-item {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+#todoList .todo-item:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+#todoList .todo-item:hover {
+  background: #fbbcbc;
+}
+
+/* add a background color and strike out text when clicked */
+#todoList .todo-item.checked {
+  background:#fbbcbc;
+  color: #333;
+  text-decoration: line-through;
+}
+
+/* add a "checked" mark on clicking todo item */
+#todoList .todo-item.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #333;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}

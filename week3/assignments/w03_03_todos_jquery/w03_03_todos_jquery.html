@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="w03_03_todos_jquery.css" />
+    <title>Week 03 - Todos App in jQuery</title>
+    <!--
+      Assignments:
+      - On clicking add button, the task should be added as first item to list
+      -
+
+    -->
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Todos App [ jQuery ]</h1>
+      <br>
+      <div class="app-wrapper">
+        <header>
+          <h2 class="text-center">My ToDos</h2>
+          <input type="text" id="todoInput" placeholder="type your task here ...">
+          <span onclick="addTask()" class="add">Add</span>
+        </header>
+        <main>
+          <ul id="todoList">
+            <li class="todo-item">Practice lecture codes <span class="close">&times;</span></li>
+            <li class="todo-item">Completed assignment <span class="close">&times;</span></li>
+            <li class="todo-item checked">Watch lecture video <span class="close">&times;</span></li>
+          </ul>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="w03_03_todos_jquery.js"></script>
+  </body>
+</html>
