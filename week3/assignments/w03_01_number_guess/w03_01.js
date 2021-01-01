@@ -23,7 +23,9 @@ document.querySelector('.check').addEventListener('click', function () {
     // when guess greater than maxNumLimit
   } else if (guess > maxNumLimit) {
     // show message with '🚫 Guess should be in between 1 to 20.'
-    // update the value of element with class .guess to empty string
+    // update the value of element with class .guess to empty
+    showMessage('Guess should be in between 1 to 20');
+    document.querySelector('.guess').value="";
   } else if (guess === secretNumber) {
     showMessage('🏆 Correct Number!');
     document.querySelector('.number').textContent = secretNumber;
@@ -34,6 +36,10 @@ document.querySelector('.check').addEventListener('click', function () {
     //   set highScore to score
     //   update the element with class .highscore to highScore
 
+    if(score>highscore){
+      highcsore=score;
+      document.querySelector('.highscore').textContent=highscore;
+    }
     // when guess is wrong
   } else if (guess !== secretNumber) {
     if (score > 1) {
@@ -55,4 +61,10 @@ document.querySelector('.reset').addEventListener('click', function() {
   // update the textContent of element with class .number to ?
   // update the value of element with class .guess to empty string
   // update the backgroundColor property to #fff of style attribute of body element
+  showMessage('Start guessing.....')
+  document.querySelector('.score').textContent=10;
+  score=10;
+  document.querySelector('.number').textContent="?";
+  document.querySelector('guess').value="?";
+  document.querySelector('body').style.backgroundColor="#fff";
 });
