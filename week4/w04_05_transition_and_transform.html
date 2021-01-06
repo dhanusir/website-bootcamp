@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 04 - CSS Transition and Transform</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin: 20px 0;
+    }
+    h2 {
+      margin: 15px 0;
+    }
+    .demo {
+      padding: 1rem;
+      background-color: #eee;
+      height: 100vh;
+    }
+    .demo .box {
+      background-color: blue;
+      position: relative;
+      width: 150px;
+      height: 150px;
+
+      /* transition-property: opacity;;
+      transition-duration: 2s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.2s; */
+
+      /* transition: property duration function delay; */
+      transition: opacity 0 ease-in-out 10s;
+    }
+    .demo .box:hover {
+      opacity: 0.5;
+    }
+
+    .demo .box.green {
+      background-color: green;
+      position: relative;
+      width: 150px;
+      height: 250px;
+
+      /* transition-property: width;
+      transition-duration: 2s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 1s; */
+
+      /* transition: property duration function delay; */
+      transition: transform 1s ease-in-out;
+    }
+    .demo .box.green:hover {
+      /* transform: scale(1.2, 1.2); */
+      transform: rotate(90deg);
+      opacity: 1;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="demo">
+    <h1>Transition Demo</h1>
+    <div class="box">
+    </div>
+    <br><br>
+    <h1>Transition with Transform Demo</h1>
+    <div class="box green">
+    </div>
+  </div>
+
+</body>
+</html>
+
+<!--
+CSS Transition:
+CSS transitions allows you to change property values smoothly, over a given duration.
+
+Transition Vs Animation
+- Transitions require a trigger to run.
+  While, CSS animations don’t need a trigger. They can respond to a trigger,
+  it isn’t needed to start the animation.
+
+- Transition can't change CSS properties
+  You set the property values on a selector and perhaps the selector’s :hover state.
+  The transition defines how the change occurs, but not the specific start and end values.
+
+- Transitions are limited to an initial and final state.
+  While, CSS animations can have intermediate states defined by keyframes.
+
+- Transitions can’t loop. They run when triggered and then run in reverse when the trigger is removed.
+  Whereas Animations can loop as many times as you want.
+
+
+See https://www.w3schools.com/css/css3_transitions.asp
+-->

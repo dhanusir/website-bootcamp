@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 04 - CSS Animation Introduction</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin: 20px 0;
+    }
+    h2 {
+      margin: 15px 0;
+    }
+    .demo {
+      padding: 1rem;
+      background-color: #eee;
+      height: 100vh;
+    }
+    .demo .box {
+      background-color: blue;
+      position: relative;
+      width: 150px;
+      height: 150px;
+
+      /* animation: expand;
+      animation-duration: 2s;
+      animation-delay: 1s;
+      animation-iteration-count: 2;
+      animation-fill-mode: forwards;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out; */
+
+      /* animation: expand;
+      animation-duration: 2s;
+      animation-delay: 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out; */
+
+      /* short hand */
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      /* animation: expand 2s ease-in-out 1s 1 alternate forwards; */
+      animation: expand 2s ease-in-out 0.5s 2 alternate forwards;
+    }
+
+    @keyframes expand {
+      from {
+        top: 0;
+      }
+      to {
+        top: 100px;
+        width: 500px;
+        background-color: green;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="demo">
+    <div class="box">
+
+    </div>
+  </div>
+
+</body>
+</html>
+
+<!--
+CSS Animation: CSS allows animation of HTML elements without using JavaScript or Flash!
+- To use CSS animation, you must first specify some keyframes for the animation.
+- Keyframes hold what styles the element will have at certain times.
+- you must bind the animation to an element
+
+@keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+
+
+See https://www.w3schools.com/css/css3_animations.asp
+-->

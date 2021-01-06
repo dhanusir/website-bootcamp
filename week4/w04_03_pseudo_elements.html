@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 04 - Pseudo Elements</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin: 20px 0;
+    }
+    h2 {
+      margin: 15px 0;
+    }
+    .demo {
+      padding: 1rem;
+    }
+    /* style first line of paragraph irrespective of viewport width */
+    .first-para::first-line {
+      color: red;
+      text-transform: uppercase;
+    }
+
+    /* style first letter of paragraph */
+    .second-para::first-letter {
+      color: blue;
+      font-size: 2rem;
+    }
+    .second-para .first-word {
+      font-size: 2rem;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .before::before {
+      content: "🏆 ";
+    }
+
+    .is-required::after {
+      content: " *";
+      color: red;
+    }
+
+    /* banner */
+    .banner {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background-color: #444;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+    .banner::before {
+      content: '';
+      background: url("https://picsum.photos/800/1800") no-repeat center center/cover;
+      opacity: 0.7;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .banner > * {
+      z-index: 1;
+    }
+    /* background: url("https://picsum.photos/800/2000") no-repeat center center/cover;
+    opacity: 0.4; */
+    .banner h1 {
+      font-size: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <h1>Welcome to Banner</h1>
+    <h2>Excellent use case of ::before in real project</h2>
+
+    <p>
+      We are experts in providing quality services to utmost satisfaction.
+    </p>
+  </div>
+
+  <div class="demo">
+    <h1>Pseudo Elements</h1>
+
+    <h2>::first-line</h2>
+    <p class="first-para">
+      This is a first line of the paragraph. This is the second line of paragraph.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cum excepturi
+      sed perspiciatis assumenda nam eum, id doloremque quibusdam, officiis ratione
+      exercitationem modi asperiores maiores vitae possimus consequuntur ducimus maxime.
+    </p>
+
+    <h2>::first-letter</h2>
+    <p class="second-para">
+      <span class="first-word">This</span> is a first line of the paragraph. This is the second line of paragraph.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cum excepturi
+      sed perspiciatis assumenda nam eum, id doloremque quibusdam, officiis ratione
+      exercitationem modi asperiores maiores vitae possimus consequuntur ducimus maxime.
+    </p>
+
+    <h2>::before</h2>
+    <h2 class="before">This is some heading.</h2>
+
+    <h2>::after</h2>
+    <label for="name" class="is-required">Name</label>
+    <input type="text" placeholder="enter your name ..." id="name">
+  </div>
+
+</body>
+</html>
+
+<!--
+Pseudo Elements: A pseudo-element is used to style specified parts of an element.
+For example:
+- Style the first letter, or line, of an element
+- Insert content before, or after, the content of an element
+
+All Pseudo Elements and Classes: https://www.w3schools.com/css/css_pseudo_elements.asp
+-->

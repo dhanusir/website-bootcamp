@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 04 - Advanced CSS Selectors</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin: 20px 0;
+    }
+    h2 {
+      margin: 15px 0;
+    }
+    .demo {
+      padding: 1rem;
+    }
+
+    /* descendant selector */
+    .grandparent {
+      background-color: #eee;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .grandparent .parent {
+      background-color: #aaa;
+      list-style: none;
+      padding: 1rem;
+    }
+    .grandparent h2 {
+      font-family: Helvetica, sans-serif;
+    }
+
+    /* direct child selector */
+    /* h2 {
+      color: red;
+    } */
+    .grandparent > h2 {
+      color: red;
+    }
+
+    /* directly after */
+    div + p {
+      background-color: black;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 1rem;
+    }
+
+    /* all general paragraph after div */
+    div ~ p {
+      text-align: center;
+      font-size: 12px;
+    }
+
+    /* selector by attribute */
+    a[target="_blank"] {
+      color: red;
+    }
+    .form {
+      width: 250px;
+    }
+    .form input[type="text"] {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    /*
+    .form .submit {
+      width: auto;
+    } */
+
+    /* .parent .child {
+      color: blue;
+    }
+    .parent .child:first-child {
+      color: green;
+    }
+    .parent .child:last-child {
+      font-style: italic;
+    }
+    .parent .child:nth-child(4) {
+      text-transform: uppercase;
+    }
+    .parent .child:nth-child(3n + 0) {
+      background-color: yellow;
+    }
+    .parent .child:nth-child(3n + 5) {
+      background-color: orange;
+    } */
+    .parent .child:nth-child(odd) {
+      /* font-weight: 600; */
+      background-color: #eee;
+    }
+    .parent .child:nth-child(even) {
+      /* font-size: 12px; */
+      background-color: lightyellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo">
+    <h1>Advanced CSS Selectors (Combinators)</h1>
+
+    <div class="grandparent">
+      <h2>Grandparent first Heading</h2>
+      <p>
+        Some text inside grandparent.
+      </p>
+
+      <ul class="parent">
+        <li class="child">Child Item 1</li>
+        <li class="child">Child Item 2</li>
+        <li class="child">Child Item 3</li>
+        <li class="child">Child Item 4</li>
+        <li class="child">Child Item 5</li>
+        <li class="child">Child Item 6</li>
+      </ul>
+
+      <h2>Grandparent second heading</h2>
+      <p>
+        Some text inside grandparent.
+      </p>
+    </div>
+
+    <p class="first-para">
+      After Grandparent para<br>
+      A paragraph with some text right after grandparent.
+    </p>
+
+    <h2>Some random Heading</h2>
+
+    <p class="second-para">
+      Another paragraph with some text after grandparent but not immediate.
+    </p>
+    <br>
+    <div>Second div</div>
+    <p>
+      this will get css
+    </p>
+
+    <br>
+    <div class="actions">
+      <a href="#">Home</a> |
+      <a href="#">About</a> |
+      <a href="#" target="_blank">Contact</a>
+    </div>
+    <br>
+
+    <div class="form">
+      <input type="text" placeholder="enter name ...">
+      <input type="text" placeholder="enter email ...">
+      <input type="submit" value="Register" class="submit">
+    </div>
+  </div>
+</body>
+</html>
+
+<!--
+CSS Combinators:
+A combinator is something that explains the relationship between the selectors.
+
+Four different combinators in CSS:
+- descendant selector (space)
+- child selector (>)
+- adjacent sibling selector (+)
+- general sibling selector (~)
+
+- Selector through element attribute
+- nth child selector
+
+See https://www.w3schools.com/css/css_combinators.asp
+-->
