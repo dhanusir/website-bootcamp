@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 05 - Stylish Search Widget</title>
+
+  <!-- Including Fontawesome-->
+  <script src="https://kit.fontawesome.com/916bf2f1f2.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #555;
+    }
+    .demo {
+      padding: 2rem;
+    }
+    .header {
+      margin-bottom: 2rem;
+      color: yellow;
+    }
+    .search {
+      height: 50px;
+      position: relative;
+    }
+    .search .input {
+      background-color: #fff;
+      border: 0;
+      height: 50px;
+      width: 50px;
+      font-size: 18px;
+      padding: 1rem;
+      transition: width 0.2s ease;
+    }
+    .search .btn {
+      background-color: #fff;
+      border: 0;
+      height: 50px;
+      width: 50px;
+      font-size: 18px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: transform 0.2s ease;
+    }
+
+    .search .input:focus, .search .btn:focus {
+      outline: 0;
+    }
+
+    /* final state after click */
+    .search.active .input {
+      width: 220px;
+    }
+    .search.active .btn {
+      transform: translateX(195px);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="demo">
+    <div class="header">
+      <h1>Stylish Search Widget</h1>
+      <p>(Use of transform, translate and JavaScript)</p>
+    </div>
+
+    <div class="search">
+      <input type="text" class="input" placeholder="Search ...">
+      <button class="btn">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    let search = document.querySelector(".search");
+    let input = document.querySelector(".input");
+    let btn = document.querySelector(".btn");
+
+    btn.addEventListener("click", function() {
+      search.classList.toggle('active');
+      input.focus();
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <style>
+    .search input {
+      background-color: #fff;
+      border: 0;
+      height: 50px;
+      width: 50px;
+      padding: 16px;
+      font-size: 18px;
+      transition: width 0.4s ease;
+    }
+    .search .btn {
+      background-color: #fff;
+      border: 0;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+      font-size: 22px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: transform 0.4s ease;
+    }
+  </style>
+
+  <script>
+    let input = document.querySelector(".input");
+    let btn = document.querySelector(".btn");
+    let search = document.querySelector(".search");
+
+    btn.addEventListener("click", function() {
+      search.classList.toggle("active");
+      input.focus();
+    });
+  </script> -->

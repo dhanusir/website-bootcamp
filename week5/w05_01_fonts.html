@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 05 - Fonts</title>
+
+  <!-- Remote External Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300;400;600;700;900&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Sahitya:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet"> -->
+  <style>
+    /* defining custom font */
+    @font-face {
+      font-family: "brushScript";
+      src: url("fonts/brush-script-mt/brush-script-mt-kursiv.ttf")
+    }
+
+    .custom-font {
+      font-family: "brushScript";
+    }
+    /* defining custom font ends */
+
+    .web-font-serif {
+      font-family: Georgia, serif;
+    }
+    .web-font-sans-serif {
+      font-family: Helvetica, sans-serif;
+    }
+
+    .google-font {
+      font-family: "Source Sans Pro", sans-serif;
+      color: blue;
+    }
+
+    .fallback-font {
+      font-family: "Montserrat", Arial, sans-serif;
+    }
+
+    .normal-font {
+      font-style: normal;
+    }
+    .italic-font {
+      font-style: italic;
+    }
+    .weight-normal {
+      font-weight: normal;
+    }
+    .weight-bold {
+      font-weight: bold;
+    }
+    .variant-normal {
+      font-variant: normal;
+    }
+    .variant-small-caps {
+      font-variant: small-caps;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="web-font-serif">Heading with Web Safe font Serif (Georgia)</h1>
+  <br>
+  <h1 class="web-font-sans-serif">Heading with Web Safe font Sans Serif (Helvetica)</h1>
+  <br>
+  <h1 class="custom-font">Heading with Custom Font (Brush Script)</h1>
+  <br>
+  <h1 class="google-font">Heading with Google Font (Source Sans Pro)</h1>
+  <br>
+  <h1 class="fallback-font">Heading with Fallback Font (if Montserrat is not present than use Arial)</h1>
+
+  <hr>
+
+  <h3>Font Normal</h3>
+  <p class="normal-font">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptate a molestiae, dolor
+    consequatur corporis saepe! Consectetur illum voluptatem blanditiis.
+  </p>
+
+  <h3>Font Italic</h3>
+  <p class="italic-font">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptate a molestiae, dolor
+    consequatur corporis saepe! Consectetur illum voluptatem blanditiis.
+  </p>
+
+  <h3>Font Weight Normal</h3>
+  <p class="weight-normal">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptate a molestiae, dolor
+    consequatur corporis saepe! Consectetur illum voluptatem blanditiis.
+  </p>
+
+  <h3>Font Weight Bold</h3>
+  <p class="weight-bold">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptate a molestiae, dolor
+    consequatur corporis saepe! Consectetur illum voluptatem blanditiis.
+  </p>
+
+  <h3>Font Variant Normal</h3>
+  <p class="variant-normal">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptate a molestiae, dolor
+    consequatur corporis saepe! Consectetur illum voluptatem blanditiis.
+  </p>
+
+  <h3>Font Variant Small Caps</h3>
+  <p class="variant-small-caps">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptate a molestiae, dolor
+    consequatur corporis saepe! Consectetur illum voluptatem blanditiis.
+  </p>
+</body>
+</html>
+
+<!--
+
+## Font Styles
+
+### Serif
+- The letters and characters end in strokes.
+- Serif fonts are usually used in paragraphs or bodies which make use of small text as it is easily readable.
+- Serif fonts can be found in the body of a newspaper article.
+- Examples: Times New Roman, Georgia, Garamond
+
+### Sans-serif
+- The letters and characters are plain and don't have strokes at the end.
+- Sans-serif is usually used in places where you want to make the text stand-out.
+- You'll see this type of font in the title of a newspaper article
+- Examples: Arial, Verdana, Helvetica
+
+### Monospaced
+- In Monospaced fonts, each letter and character have the same width. i.e they occupy the same amount of horizontal space.
+- These kinds of fonts are usually seen in command lines.
+- Examples: Courier New, Lucida Console, Monaco
+
+### Cursive
+- In cursive font, the adjacent characters are connected to each other.
+- Examples: Thirsty Script, Lucida Handwriting
+- See https://www.thecreativehustler.com/30-best-cursive-fonts/ also
+
+### Script
+- It includes letters written by hand and based on varied and fluid strokes.
+- Examples: Brush Script MT
+- See https://en.wikipedia.org/wiki/List_of_script_typefaces
+
+
+## Font Formats
+
+See https://www.w3schools.com/css/css3_fonts.asp
+
+
+-->

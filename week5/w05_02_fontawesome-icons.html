@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 05 - Fontawesome Icons</title>
+
+  <!-- Including Fontawesome-->
+  <script src="https://kit.fontawesome.com/916bf2f1f2.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .demo {
+      padding: 2rem;
+    }
+    h1 {
+      margin-bottom: 2rem;
+    }
+
+    .contact-header {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .contact-header h1 {
+      margin: 0;
+    }
+    .contact-body {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .contact-body .contact-box {
+      background-color: #555;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      font-family: Helvetica, sans-serif;
+      border-radius: 5px;
+      width: 250px;
+    }
+    .contact-body .contact-box p {
+      font-size: 13px;
+      font-weight: 300;
+    }
+    .contact-body .contact-box i {
+      /* font-size: 1.5rem; */
+      color: orange;
+    }
+    .contact-body .contact-box h4 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo">
+    <h1>Adding Fontawesome icon</h1>
+
+    <div class="contact-header">
+      <h1>Contact Us</h1>
+      <p>
+        Happy to help you with any of your query!
+      </p>
+    </div>
+    <div class="contact-body">
+      <div class="contact-box email">
+        <p>
+          <i class="fas fa-envelope fa-2x"></i>
+        </p>
+        <h4>Email</h4>
+        <p>
+          contact@example.com
+        </p>
+      </div>
+      <div class="contact-box address">
+        <p>
+          <i class="fas fa-map-marker-alt fa-2x"></i>
+        </p>
+        <h4>Address</h4>
+        <p>
+          Shop #12, Foo Building,
+          Lazimpat Road, Kathmandu, Nepal
+        </p>
+      </div>
+      <div class="contact-box phone">
+        <p>
+          <i class="fas fa-phone-alt fa-2x"></i>
+        </p>
+        <h4>Phone</h4>
+        <p>
+          +977 1234567890
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
