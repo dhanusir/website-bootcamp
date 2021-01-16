@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 05 - Travel Agency Site</title>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.0/simple-lightbox.min.css">
+  <link rel="stylesheet" href="css/travel.css">
+</head>
+<body>
+  <!-- navbar and banner -->
+  <header>
+    <nav class="upper d-flex justify-content-between align-items-center">
+      <a class="navbar-brand font-cursive" href="#">
+        <img src="img/logo.png" alt="">
+        <span class="text-danger">BRG</span> Travels
+      </a>
+      <div class="right-actions">
+        <img src="img/call.png" alt=""> <span>+977 1234567890</span>
+        <a href="" class="btn btn-light px-4 ml-3">Get a Free Quote</a>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Best Trips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="right-actions">
+            <img src="img/facebook.png" alt=""> <img src="img/twitter.png" alt=""> <img src="img/insta.png" alt="">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner d-flex justify-content-start align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h1>
+              Explore Nepal with
+              the best travel agency
+            </h1>
+          </div>
+        </div>
+        <div class="banner-actions">
+          <a href="#" class="btn btn-primary px-4">Start Booking</a>
+          <a href="#" class="btn btn-danger px-4">View Offers</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- main for website sections -->
+  <main>
+    <div class="highlights">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3 d-flex">
+            <img src="img/calender.png" alt="">
+            <div class="info ml-2">
+              <h6 class="font-primary mb-0">DEPARTURES</h6>
+              <p class="font-secondary mb-0">
+                Guaranteed Departure Trips
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex">
+            <img src="img/map.png" alt="">
+            <div class="info ml-2">
+              <h6 class="font-primary mb-0">CUSTOMIZED TRIP</h6>
+              <p class="font-secondary mb-0">
+                Design your own trip
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex">
+            <img src="img/search.png" alt="">
+            <div class="info ml-2">
+              <h6 class="font-primary mb-0">FIND TRIP</h6>
+              <p class="font-secondary mb-0">
+                Search Perfect Package
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about -->
+    <section class="about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <img src="img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-6 offset-md-1">
+            <h1 class="font-primary mt-5">Discover New Horizons</h1>
+
+            <ul class="nav nav-tabs" id="aboutTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about"
+                  role="tab" aria-controls="about" aria-selected="true">ABOUT US</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                  role="tab" aria-controls="profile" aria-selected="false">WHY CHOOSE US</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact"
+                  role="tab" aria-controls="contact" aria-selected="false">OUR MISSION</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="aboutTabContent">
+              <div class="tab-pane fade show active pt-4" id="about" role="tabpanel" aria-labelledby="about-tab">
+                We are committed to bringing our
+                clients the best in value and quality travel arrangements.
+                We are passionate about travel and sharing the world's wonders with you.
+              </div>
+              <div class="tab-pane fade pt-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis optio
+                aut obcaecati pariatur impedit minus tenetur rerum, officia aspernatur accusantium.
+              </div>
+              <div class="tab-pane fade pt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat enim officia deserunt
+                ipsum quaerat placeat ut quis aspernatur, dignissimos aliquam.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="services">
+      <div class="container">
+        <h1 class="text-center mb-5">Our Services</h1>
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-3">
+            <div class="card d-block text-center shadow border-0 p-2">
+              <img src="img/variety.png" class="" alt="...">
+              <div class="card-body">
+                <h5 class="card-title font-primary">Wide variety of tours</h5>
+                <p class="card-text font-secondary font-weight-light">
+                  We offer a wide variety of
+                  personally picked tours with
+                  destinations all over Nepal.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card d-block text-center shadow border-0 p-2">
+              <img src="img/star.png" class="" alt="...">
+              <div class="card-body">
+                <h5 class="card-title font-primary">High Quality Service</h5>
+                <p class="card-text font-secondary font-weight-light">
+                  Our tour managers are qualified,
+                  skilled, and friendly to bring
+                  you the best service.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <div class="card d-block text-center shadow border-0 p-2">
+              <img src="img/hotel.png" class="" alt="...">
+              <div class="card-body">
+                <h5 class="card-title font-primary">Hand Picked Hotels</h5>
+                <p class="card-text font-secondary font-weight-light">
+                  Our team offers only the best selection of affordable and luxury hotels to our clients.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card d-block text-center shadow border-0 p-2">
+              <img src="img/call.png" class="" alt="...">
+              <div class="card-body">
+                <h5 class="card-title font-primary">24/7 Support</h5>
+                <p class="card-text font-secondary font-weight-light">
+                  You can always get professional support from our staff 24/7 and ask any question you have.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- best trips -->
+    <section class="best-trips">
+      <div class="container">
+        <h1 class="text-center mb-5">Best Trips</h1>
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-3">
+            <div class="card shadow border-0">
+              <img src="img/everest.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title font-primary text-center">Everest Climbing</h5>
+                <div class="info d-flex justify-content-between">
+                  <div class="cal">
+                    <img src="img/calendar-2.png" alt="">&nbsp;<span>10 Days</span>
+                  </div>
+                  <div class="price">
+                    <img src="img/dollar.png" alt="">&nbsp;<span>USD 800+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow border-0">
+              <img src="img/chitwan.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title font-primary text-center">Chitwan National Park</h5>
+                <div class="info d-flex justify-content-between">
+                  <div class="cal">
+                    <img src="img/calendar-2.png" alt="">&nbsp;<span>3 Days</span>
+                  </div>
+                  <div class="price">
+                    <img src="img/dollar.png" alt="">&nbsp;<span>USD 300+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow border-0">
+              <img src="img/pokhara.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title font-primary text-center">Pokhara Visits</h5>
+                <div class="info d-flex justify-content-between">
+                  <div class="cal">
+                    <img src="img/calendar-2.png" alt="">&nbsp;<span>5 Days</span>
+                  </div>
+                  <div class="price">
+                    <img src="img/dollar.png" alt="">&nbsp;<span>USD 500+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <a href="#" class="btn btn-danger border-rounded px-4">View More Trips</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery">
+      <div class="container">
+        <h1 class="text-center mb-5">Gallery</h1>
+
+        <div class="card-columns">
+          <div class="card">
+            <a href="img/gallery/pic1.jpg">
+              <img src="img/gallery/pic1.jpg" class="card-img-top" alt="...">
+            </a>
+          </div>
+          <div class="card">
+            <a href="img/gallery/pic2.jpg">
+              <img src="img/gallery/pic2.jpg" class="card-img-top" alt="...">
+            </a>
+          </div>
+          <div class="card">
+            <a href="img/gallery/pic3.jpg">
+              <img src="img/gallery/pic3.jpg" class="card-img-top" alt="...">
+            </a>
+          </div>
+          <div class="card">
+            <a href="img/gallery/pic4.jpg">
+              <img src="img/gallery/pic4.jpg" class="card-img-top" alt="...">
+            </a>
+          </div>
+          <div class="card">
+            <a href="img/gallery/pic5.jpg">
+              <img src="img/gallery/pic5.jpg" class="card-img-top" alt="...">
+            </a>
+          </div>
+          <div class="card">
+            <a href="img/gallery/pic6.jpg">
+              <img src="img/gallery/pic6.jpg" class="card-img-top" alt="...">
+            </a>
+          </div>
+          <div class="card">
+            <a href="img/gallery/pic7.jpg">
+              <img src="img/gallery/pic7.jpg" class="card-img-top" alt="...">
+            </a>
+          </div>
+          <div class="card">
+            <a href="img/gallery/pic8.jpg">
+              <img src="img/gallery/pic8.jpg" class="card-img-top" alt="...">
+            </a>
+          </div>
+          <div class="card">
+            <a href="img/gallery/pic9.jpg">
+              <img src="img/gallery/pic9.jpg" class="card-img-top" alt="...">
+            </a>
+          </div>
+          <div class="card">
+            <a href="img/gallery/pic10.jpg">
+              <img src="img/gallery/pic10.jpg" class="card-img-top" alt="...">
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- partners -->
+    <section class="partners">
+      <div class="container">
+        <h1 class="text-center mb-5">Partners</h1>
+
+        <div class="row justify-content-center">
+          <img src="img/npl.png" alt="">
+          <img src="img/ntb.png" alt="">
+          <img src="img/sabre.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <div class="heading text-white">
+              <img src="img/map2.png" alt=""> <span class="font-primary font-weight-bold">LOCATION</span>
+              <p class="font-secondary font-weight-light mt-3">
+                Gorkha, Gandaki, Nepal
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="heading text-white">
+              <img src="img/call2.png" alt=""> <span class="font-primary font-weight-bold">CALL</span>
+              <p class="font-secondary font-weight-light mt-3">
+                +977 1-1234567 ( Office ) <br>
+                +977 1234567890 ( BRG )
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="heading text-white">
+              <img src="img/mail2.png" alt=""> <span class="font-primary font-weight-bold">MAIL</span>
+              <p class="font-secondary font-weight-light mt-3">
+                contact@brgtravels.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <p class="mb-0 text-center">Copyright &copy; 2021 BRG Travels. All rights reserved</p>
+  </footer>
+
+  <!-- JavaScripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.0/simple-lightbox.min.js"></script>
+  <script src="js/travel.js"></script>
+</body>
+</html>

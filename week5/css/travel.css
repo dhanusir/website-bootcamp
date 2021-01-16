@@ -1,0 +1,189 @@
+/* CSS for travel site */
+.border-rounded {
+  border-radius: 25px;
+}
+.font-primary {
+  font-family: 'Raleway', sans-serif;
+}
+.font-secondary {
+  font-family: 'Open Sans', sans-serif;
+}
+.font-cursive {
+  font-family: 'Lobster', cursive;
+}
+header .upper {
+  padding: 0.5rem 3rem;
+  background-color: #fff;
+  position: relative;
+}
+header .upper img {
+  height: 35px;
+}
+header .upper header .navbar-brand {
+  color: #636161;
+}
+header .upper .right-actions {
+  font-size: 13px;
+}
+header .upper .right-actions .btn {
+  font-size: 13px;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+.text-danger {
+  color: #FB0606 !important;
+}
+
+/* navbar lower */
+header .navbar {
+  background-color: #172F44;
+  padding: 0;
+}
+header .navbar img {
+  height: 22px;
+}
+header .navbar .nav-item .nav-link {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  padding: 1rem;
+}
+header .navbar .nav-item.active .nav-link {
+  font-weight: 600;
+  background-color: #36495B;
+}
+
+/* banner */
+header {
+  position: relative;
+}
+header .upper {
+  z-index: 10;
+}
+header > * {
+  z-index: 10;
+}
+header .banner > * {
+  z-index: 10;
+}
+header .banner {
+  background-color: #444;
+  height: 650px;
+}
+header .banner::before {
+  content: '';
+  background: url("../img/banner.jpg") no-repeat center center/cover;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header .banner h1 {
+  /* width: 500px; */
+  color: #fff;
+  font-size: 2.8rem;
+}
+header .banner .btn {
+  border-radius: 25px;
+  font-weight: 300;
+}
+header .banner .btn-primary {
+  background-color: #5E9FFF;
+  border-color: #5E9FFF;
+}
+header .banner .btn-primary:hover {
+  background-color: #4480d8;
+  border-color: #4480d8;
+}
+
+/* highlights */
+.highlights {
+  background-color: #FFF4E3;
+  padding: 2rem;
+}
+.highlights .info h6 {
+  color: #E69F36;
+  font-weight: 500;
+}
+.highlights .info p {
+  font-size: 13px;
+}
+.highlights img {
+  height: 35px;
+}
+
+section {
+  padding: 6rem 0;
+}
+section h1 {
+  font-family: 'Raleway', sans-serif;
+}
+section:nth-child(even) {
+  background-color: #F9F9F9;
+}
+
+/* about */
+.about img {
+  border-radius: 15px;
+}
+.about .nav-tabs .nav-link {
+  color: #444;
+  font-family: 'Raleway', sans-serif;
+}
+.about .nav-tabs .nav-link.active {
+  color: #3043EB;
+  background-color: transparent;
+  border-bottom-color: #F9F9F9;
+  font-weight: 600;
+}
+.about .tab-content .tab-pane {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* services */
+.services .card img {
+  margin-top: 1rem;
+  height: 50px;
+}
+.services .card .card-title {
+  font-weight: 600;
+}
+.services .card .card-text {
+  font-size: 14px;
+}
+
+/* best trips */
+.best-trips .info img {
+  height: 22px;
+}
+.best-trips .info {
+  font-size: 13px;
+}
+
+/* partners */
+.partners img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+/* contact  */
+.contact {
+  background-color: #666;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  font-size: 13px;
+  padding: 0.5rem;
+}
+@media (min-width: 1180px) {
+  .card-columns {
+    column-count: 4;
+  }
+}

@@ -1,0 +1,188 @@
+.font-primary {
+  font-family: "Raleway", sans-serif;
+}
+.font-secondary {
+  font-family: "Open Sans", sans-serif;
+}
+.navbar-dark {
+  background-color: #172F44 !important;
+}
+.nav-upper {
+  height: 60px;
+  padding: 0 4rem;
+  position: relative;
+  background-color: #fff;
+}
+.nav-upper img, .navbar img {
+  height: 30px;
+}
+.nav-upper .brand-text {
+  display: inline-block;
+  font-family: 'Lobster', cursive;
+  color: #888;
+}
+.nav-upper .brand-text span { color: red; }
+.nav-upper .nav-right .call {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.nav-upper .nav-right .get-quote {
+  border-radius: 25px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  background-color: #fff;
+  font-size: 12px !important;
+  color: #2663FF;
+}
+.navbar {
+  padding: 0;
+}
+.navbar .nav-item .nav-link {
+  padding: 1rem;
+  font-weight: 300;
+}
+.navbar .nav-item.active .nav-link {
+  background-color: #36495B;
+  font-weight: 600;
+}
+.navbar .nav-item:hover .nav-link {
+  background-color: #36495B;
+  color: #fff;
+}
+
+.nav-upper img {
+  height: 25px;
+}
+header {
+  position: relative;
+}
+header .banner {
+  background: #333;
+  height: 550px;
+}
+header > * {
+  z-index: 1;
+}
+header .banner > * {
+  z-index: 1;
+}
+header .banner h1 {
+  width: 30rem;
+  margin-left: 8%;
+  color: #fff;
+}
+header .banner .actions {
+  margin-left: 8%;
+}
+header .banner .actions .btn {
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 300;
+}
+header .banner::before {
+  content: '';
+  background: url("../img/banner.jpg") no-repeat center center/cover;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section {
+  padding: 6rem 0;
+}
+section:nth-child(2n) {
+  background-color: #F9F9F9;
+}
+.highlights {
+  padding: 2rem 0;
+  background-color: #FFF4E3;
+}
+.highlights img {
+  height: 40px;
+}
+.highlights .highlight-card {
+  display: flex;
+}
+.highlights .highlight-card h5 {
+  color: #E69F36;
+  font-size: 16px;
+}
+.highlights .highlight-card p {
+  font-size: 12px;
+  color: #444;
+}
+
+.about img {
+  border-radius: 10px;
+}
+.about .about-header {
+  margin-top: 2rem;
+}
+.about .nav-tabs .nav-link {
+  color: #666;
+  font-size: 16px;
+}
+.about .nav-tabs .nav-link.active {
+  color: blue;
+}
+.about .tab-content .tab-pane {
+  padding-top: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.services .card {
+  padding-top: 1.5rem;
+  text-align: center;
+  border: none;
+}
+.services .card img {
+  height: 40px;
+}
+.services .card .card-text {
+  font-size: 14px;
+}
+
+.best-trips .info img {
+  height: 20px;
+}
+.best-trips .info span {
+  font-size: 12px;
+}
+
+.partners img {
+  display: inline-block;
+  margin-right: 30px;
+  height: 50px;
+}
+
+.contact {
+  background-color: #666;
+  color: #fff;
+  padding: 4rem;
+}
+.contact img {
+  height: 30px;
+}
+.contact p {
+  margin-top: 5px;
+  font-size: 13px;
+}
+footer h6 {
+  padding: 0.5rem;
+  background: #333;
+  margin-bottom: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 333;
+}
+/* gallery */
+@media (min-width: 768px) {
+  .card-columns {
+    column-count: 4;
+  }
+}
