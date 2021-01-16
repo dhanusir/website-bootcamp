@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 06 - Grid Box Introduction</title>
+
+  <!-- See: https://css-tricks.com/snippets/css/complete-guide-grid/ -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .demo {
+      margin-top: 3rem;
+    }
+
+    .demo h1 {
+      margin-bottom: 1rem;
+    }
+
+    .demo .boxes {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: 2fr 1fr 1fr;
+      grid-auto-rows: 80px;
+      grid-gap: 1rem;
+    }
+    .demo .boxes .box {
+      background-color: steelblue;
+      border: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Helvetica, sans-serif;
+      font-weight: 1.2rem;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 4fr 2fr;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo">
+    <h1>Grid Box Introduction</h1>
+
+    <div class="boxes">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 4</div>
+      <div class="box">Box 5</div>
+      <div class="box">Box 6</div>
+      <div class="box">Box 7</div>
+      <div class="box">Box 8</div>
+      <div class="box">Box 9</div>
+      <div class="box">Box 10</div>
+      <div class="box">Box 11</div>
+      <div class="box">Box 12</div>
+      <div class="box">Box 13</div>
+      <div class="box">Box 14</div>
+    </div>
+
+    <main>
+      <section>
+        <h2>Welcome to My Blog</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+          earum quaerat voluptate alias qui suscipit illum minus ducimus
+          quidem excepturi.
+        </p>
+      </section>
+      <aside>
+        <h2>Navbar</h2>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Gallery</li>
+        </ul>
+      </aside>
+    </main>
+
+    </div>
+  </div>
+
+</body>
+</html>

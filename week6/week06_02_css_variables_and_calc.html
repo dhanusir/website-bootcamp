@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 06 - Grid Box Introduction</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* variable defining syntax */
+    /* --name: value */
+    :root {
+      --text-primary: orange;
+      --max-width: 900px;
+      --box-height: 300px;
+    }
+
+    .demo {
+      margin-top: 3rem;
+    }
+
+    .demo h1 {
+      margin-bottom: 1rem;
+    }
+
+    .container, .outside-container {
+      max-width: var(--max-width);
+      margin: auto;
+      display: flex;
+      gap: 1rem;
+    }
+    .container .box {
+      --primary-color: #333;
+      --secondary-color: #ccc;
+      --text-primary: rgb(44, 44, 218);
+      --light-color: #f4f4f4;
+      --box-width: 400px;
+
+      background-color: #666;
+      padding: 1rem;
+      border: 1px solid #eee;
+      height: var(--box-height);
+    }
+
+    .container .box p {
+      color: var(--secondary-color);
+    }
+
+    .outside-container {
+      width: calc(100% - 100px);
+    }
+
+    .outside-container .box {
+      --secondary-color: blue;
+
+      background-color: #eee;
+      padding: 1rem;
+      border: 1px solid #eee;
+    }
+    .box {
+      margin-bottom: 1rem;
+    }
+    .outside-container p {
+      color: var(--secondary-color);
+    }
+
+    section header h1 {
+      background-color: #444;
+      color: #fff;
+      width: var(--max-width);
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="demo">
+    <h1>CSS Variables and calc() function</h1>
+
+    <div class="container">
+      <div class="box box1">
+        <h3>Left Box</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ea recusandae quas vel,
+          omnis dolorum voluptatem possimus libero doloremque aut odit consequatur eos tenetur
+          enim laudantium incidunt magnam praesentium commodi.
+        </p>
+      </div>
+
+      <div class="box box2">
+        <h3>Right Box</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ea recusandae quas vel,
+          omnis dolorum voluptatem possimus libero doloremque aut odit consequatur eos tenetur
+          enim laudantium incidunt magnam praesentium commodi.
+        </p>
+      </div>
+    </div>
+
+    <div class="outside-container">
+      <div class="box box1">
+        <h3>Outside Container Left Box</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ea recusandae quas vel,
+          omnis dolorum voluptatem possimus libero doloremque aut odit consequatur eos tenetur
+          enim laudantium incidunt magnam praesentium commodi.
+        </p>
+      </div>
+
+      <div class="box box2">
+        <h3>Outside Container Right Box</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ea recusandae quas vel,
+          omnis dolorum voluptatem possimus libero doloremque aut odit consequatur eos tenetur
+          enim laudantium incidunt magnam praesentium commodi.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <header>
+      <h1>This Heading has width of Container</h1>
+    </header>
+  </section>
+</body>
+</html>
