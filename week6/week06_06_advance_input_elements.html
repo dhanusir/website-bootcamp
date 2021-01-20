@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 06 - Advanced Input Elements</title>
+
+  <!-- See: https://www.w3schools.com/html/html_form_input_types.asp -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Helvetica, sans-serif;
+    }
+
+    .demo {
+      padding: 2rem;
+      max-width: 500px;
+      margin: auto;
+      margin-top: 3rem;
+      background-color: #ddd;
+    }
+
+    .demo h1 {
+      margin-bottom: 1rem;
+    }
+
+    input {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      border-radius: 5px;
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    input[type="color"] {
+      padding: inherit;
+      width: 50px;
+    }
+    input[type="tel"] {
+      display: inline;
+      width: 50%;
+    }
+    select {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+    .country-code {
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="demo">
+    <h1>Advance input elements</h1>
+
+    <form>
+
+      <label for="email">Email type:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+
+      <label for="favcolor">Your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" value="#0000ff">
+
+      <label for="birthday">Your Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+
+      <label for="birthdaytime">Birthday (date and time):</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+      <label for="bdaymonth">Birthday (month and year):</label>
+      <input type="month" id="bdaymonth" name="bdaymonth">
+
+      <label for="srcfile">Select a file:</label>
+      <input type="file" id="myfile" name="srcfile">
+      <!-- use multiple after name="srcfile" for multiple file uploads -->
+
+      <label for="review">Review (between 0 and 5):</label>
+      <input type="range" id="review" name="review" min="0" max="5" value="1">
+
+      <label for="find">Find:</label>
+      <input type="search" id="find" name="find" placeholder="find here ...">
+
+      <label for="phone">Your phone number:</label>
+      <div class="country-code">
+        <select name="cars" id="code">
+          <option value="91">India</option>
+          <option value="977">Nepal</option>
+          <option value="1">USA</option>
+        </select>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="ten digit number ...">
+      </div>
+
+
+      <input type="submit">
+    </form>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    .demo .boxes {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-gap: 0.5rem;
+    }
+
+    .demo .boxes .box {
+      background-color: #777;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #fff;
+      font-family: Helvetica, Arial, sans-serif;
+      border: 1px solid #ccc;
+      padding: 1rem;
+    }
+
+    main {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-gap: 1rem;
+    } -->

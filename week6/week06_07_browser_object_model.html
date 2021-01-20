@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 06 - Browser Object Model(BOM)</title>
+
+  <!-- See:  https://www.w3schools.com/js/js_window.asp -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .demo {
+      padding: 0 2rem;
+      max-width: 800px;
+      margin: auto;
+      margin-top: 3rem;
+    }
+
+    .demo h1 {
+      margin-bottom: 1rem;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="demo">
+    <h1>Browser Object Model</h1>
+
+    <div class="screen">
+      <strong>Screen Height &times; Width</strong> :
+      <span id="screenHeight"></span> &times; <span id="screenWidth"></span>
+    </div>
+
+    <div class="browser">
+      <strong>Browser Height &times; Width</strong> :
+      <span id="browserHeight"></span> &times; <span id="browserWidth"></span>
+    </div>
+
+    <div class="location">
+      <strong>Page location</strong> : <span id="pageLocation"></span>
+    </div>
+
+    <button onclick="reload();">Reload Window</button>
+    <br>
+    <button onclick="goBack()"">Go Back</button>
+    <br>
+    <button onclick="alert('Hurray!')">Hurray!</button>
+    <br>
+    <button onclick="deleteOpr();">Delete</button>
+    <p id="deleteResult"></p>
+  </div>
+
+  <script>
+    document.getElementById("screenHeight").innerHTML = screen.height;
+    document.getElementById("screenWidth").innerHTML = screen.width;
+
+    document.getElementById("browserHeight").innerHTML = window.innerHeight;
+    document.getElementById("browserWidth").innerHTML = window.innerWidth;
+
+    document.getElementById("pageLocation").innerHTML = "Page location is " + window.location.href;
+
+    function reload() {
+      let path = window.location.href;
+      window.location = path;
+    }
+
+    function goBack() {
+      window.history.back()
+    }
+
+    function deleteOpr() {
+      let deleteResult = document.getElementById("deleteResult");
+      if (confirm('You are deleting something. Are you sure?')) {
+        deleteResult.innerHTML = "You have deleted successfully!";
+      } else {
+        deleteResult.innerHTML = "You don't want to delete!";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    .demo .boxes {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-gap: 0.5rem;
+    }
+
+    .demo .boxes .box {
+      background-color: #777;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #fff;
+      font-family: Helvetica, Arial, sans-serif;
+      border: 1px solid #ccc;
+      padding: 1rem;
+    }
+
+    main {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-gap: 1rem;
+    } -->
