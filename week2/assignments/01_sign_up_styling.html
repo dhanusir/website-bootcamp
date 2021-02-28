@@ -12,10 +12,15 @@
             padding does not affect width of HTML elements
           - Also, better to Reset margin and padding
        */
+       box-sizing: border-box;
+       margin: 0; */
+       padding: 0;
       }
       body {
         /* Probably want to set some font-family as default Times New Roman looks oldish */
         /* Set background color to #ff7070 */
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #ff7070;
       }
       .container {
         /*
@@ -24,11 +29,15 @@
             will center a block element.
           - Also you can give margin top and bottom along with margin: auto
         */
+        max-width: 400px;
+        margin: auto;
+
       }
       a {
         /*
           Remove the underlined links as they look ugly
         */
+        text-decoration: none;
       }
 
       /* This is the white area around the form and heading, etc */
@@ -39,6 +48,10 @@
           - may be set text color to light black like #444
           - adding some border-radius will give nicer look
         */
+        background-color: white;
+        padding: 50px;
+        color: #444;
+        border-radius: 10px;
       }
 
       .form-wrapper h1, .form-wrapper p {
