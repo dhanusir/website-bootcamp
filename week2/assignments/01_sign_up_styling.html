@@ -13,7 +13,7 @@
           - Also, better to Reset margin and padding
        */
        box-sizing: border-box;
-       margin: 0; */
+       margin: 0; 
        padding: 0;
       }
       body {
@@ -31,6 +31,7 @@
         */
         max-width: 400px;
         margin: auto;
+        margin:3rem auto ;
 
       }
       a {
@@ -51,24 +52,28 @@
         background-color: white;
         padding: 50px;
         color: #444;
-        border-radius: 10px;
+        border-radius: 20px;
       }
 
       .form-wrapper h1, .form-wrapper p {
         /*
           You want to center these elements
         */
+        text-align: center;
       }
       .form-wrapper .form-group {
         /*
           Add top and bottom margin to give proper spaces between two form group
         */
+        margin:15px 0px ;
       }
       .form-wrapper .form-group label {
         /*
           - label should be turned into a block element
           - also want to give some bottom margin to differentiate with input box
         */
+        display: block;  
+        margin-bottom: 10px;
       }
       .form-wrapper .form-group input {
         /*
@@ -77,6 +82,11 @@
           - set a solid border
           - give some border-radius to look nicer
         */
+        width: 100%;
+        padding: 4px;
+        border: solid;
+        border-radius: 2px;
+
       }
       .form-wrapper .btn {
         /*
@@ -88,9 +98,19 @@
           - give default text color to white (#fff) as background is dark
           - set text font size to 14px
         */
+        padding: 5px 30px;
+        border-radius: 2px;
+        background-color: #2473fc;
+        border: 1px solid #2473fc;
+        color: #fff;
+        font-size: 14px;
+
+
+
       }
       .form-wrapper .btn:hover {
         /* make the background color bit darker like  #245bfc */
+        background: #245bfc;
       }
       /* setting CSS for another button */
       .form-wrapper .btn.bg-light {
@@ -99,9 +119,13 @@
           - give the dark text color say #333
           - you should set the border color to #eee as well
         */
+        background: #eee;
+        color: #333;
+        border-color: #eee;
       }
       .form-wrapper .bg-light:hover {
         /* make the background color bit darker like #ddd */
+        background: #ddd;
       }
 
       .action-btns {
@@ -109,6 +133,9 @@
           - make the center alignment to all the buttons
           - add bottom margin to differentiate between the bottom text
         */
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
       }
       .form-footer {
         /*
@@ -116,9 +143,13 @@
           - give top and bottom margin
           - make white as text color
         */
+        text-align: center;
+        margin: 10px;
+        color: white;
       }
       .form-footer a {
         /* make anchor color as yellow */
+        color: yellow;
       }
     </style>
   </head>
