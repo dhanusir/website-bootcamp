@@ -20,6 +20,8 @@
           - set background to color #333;
           - make width 100%
         */
+        background: #333;
+        width: 100%;
 
       }
       nav ul {
@@ -28,6 +30,10 @@
           - remove dots from list items
           - make justify-content as center
         */
+        display: flex;
+        text-decoration: none;
+        list-style-type: none;
+        justify-content: center;
 
       }
       nav ul li a {
@@ -37,10 +43,15 @@
           - make display to block
           - remove underline from anchor tags
         */
+        color: #fff;
+        padding: 1rem;
+        display: block;
+        text-decoration: none;
 
       }
       nav ul li a:hover {
         /* set background color to #555 */
+        background: #555;
 
       }
 
@@ -49,6 +60,9 @@
           - set position as sticky
           - make top 0 so that navbar stick to 0px of viewport
         */
+        position: sticky;
+        top: 0;
+        z-index: 10;
 
       }
 
@@ -60,12 +74,17 @@
           - make justify-content and align-items to center
           - set height to 250px
         */
-
+          background: green;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 250px;
       }
 
       header h1 {
         /* set font-size to 3.5rem */
-
+font-size: 3.5rem;
       }
 
       .blogs {
@@ -76,7 +95,11 @@
           - give 5% as padding left/right
           - set margin-bottom to 100px
         */
-
+        line-height: 1.5;
+        max-width: 500px;
+        margin: 50px auto;
+        padding-left: 0px 5%;
+        margin-bottom: 100px;
       }
 
       article {
@@ -86,6 +109,10 @@
           - make background color to #eee
           - set padding 2rem
         */
+        border:1px solid grey;
+        margin: 2rem;
+        background: #eee;
+        padding: 2rem;
 
       }
 
@@ -94,6 +121,8 @@
           - set position to relative
           - set left to 100px;
         */
+        position: relative;
+        left: 100px;
 
       }
 
@@ -102,10 +131,13 @@
           - since it is parent, make it position relative
           - set height to 300px
         */
+        position: relative;
+        height: 300px;
 
       }
       .font-upcase {
         /* make text-transform property to uppercase */
+      text-transform: uppercase;
 
       }
       /* set for 1st article */
@@ -116,6 +148,9 @@
           - make position absolute that we can move relative to its parent
           - make right and bottom to 0
         */
+        border: 1px dotted blue;
+        padding: 1rem;
+        position: absolute;
 
       }
 
@@ -130,7 +165,15 @@
           - make text-align center
           - make sure width is 100%
         */
-
+        background: rgba(0,0,0,0.8);
+        padding: 20px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        color:#fff;
+        width: 100%;
+        z-index: 2;
       }
 
       /*  Try following */
