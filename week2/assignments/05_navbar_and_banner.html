@@ -17,6 +17,7 @@
 
       h1 {
         /* give margin top/bottom 16px */
+        margin: 16px 0;
       }
       .navbar {
         /*
@@ -27,12 +28,20 @@
           - give justify-content as space-around to have spaces around flex items
           - set background-color to #eee
         */
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #eee;
       }
       .navbar a {
         /*
           - set color to some dark like #333
           - remove the underline
         */
+        color: #333;
+        text-decoration: none;
       }
       .navbar-nav {
         /*
@@ -40,12 +49,20 @@
           - set direction as row
           - remove the list style by setting it to none
         */
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        
+        ;
       }
       .navbar-nav li a {
         /*
           - make anchor tag as block
           - set some padding around as 1rem
         */
+          display: block;
+          padding: 1rem;
+
       }
       .navbar-nav li a:hover {
         /*
@@ -53,6 +70,8 @@
           - set background-color to #444
           - give color to #fff
         */
+        background-color: #444;
+        color: #fff;
       }
 
       .banner {
@@ -70,9 +89,20 @@
           - set background to url("../images/kathmandu.jpg") with no-repeat and center
           - set background-size to cover
         */
+        height: 400px;
+        background: #222;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: url("../images/kathmandu.jpg");
+        background-repeat: no-repeat, center;
+        background-size: cover;
       }
       .banner .heading {
         /* set some bigger height than normal h1, like 3rem */
+        height: 3rem;
       }
       .banner .tagline {
         /*
@@ -80,9 +110,13 @@
           - make font-weight to lighter as 300
           - set color to yellow
         */
+        font-weight: 300;
+        color: yellow;
+        
       }
       .banner .actions {
         /* set margin top to 1rem */
+        margin: 1rem 0 0 0 ;
       }
       .btn {
         /*
@@ -97,28 +131,50 @@
           - give line-height to 1.5
           - remove underline by setting text-decoration to none
         */
+        background: #efefef;
+        border: 1px solid #efefef;
+        color: #333;
+        padding: 0.275rem 0.75rem;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 1.7;
+        text-decoration: none;
+
       }
       .btn-primary {
         /*
           - make background and border color to #0d6efd (don't set 1px solid to border, use border-color property)
           - give color to #fff
         */
-      }
+        background: #0d6efd;  
+        border-color: #0d6efd; 
+        color: #fff; 
+          }
       .btn-primary:hover {
         /*
           make background and border color to #0b5ed7
         */
+        background: #0b5ed7;
+        border-color: #0b5ed7; 
+         
       }
       .btn-secondary {
         /*
           - make background and border color to #6c757d
           - give color to #fff
         */
+        background: #6c757d;
+        border-color: #6c757d; 
+        color: #fff;
       }
       .btn-secondary:hover {
         /*
           make background and border color to #5c636a
         */
+        background: #5c636a;
+        border-color: #5c636a; 
       }
     </style>
   </head>
